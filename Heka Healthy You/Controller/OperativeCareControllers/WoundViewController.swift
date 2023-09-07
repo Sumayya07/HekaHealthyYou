@@ -113,6 +113,7 @@ class WoundViewController: MenuViewController, UITextFieldDelegate {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegex)
         return emailTest.evaluate(with: email)
     }
+    
     @IBAction func btnHomeTapped(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         self.navigationController?.pushViewController(vc, animated: true)

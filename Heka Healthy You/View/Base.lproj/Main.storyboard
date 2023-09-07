@@ -813,12 +813,6 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOX-ih-lvT">
                                                                         <rect key="frame" x="8" y="8" width="344" height="40"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Choose2" translatesAutoresizingMaskIntoConstraints="NO" id="OXI-R9-cmx">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="36" height="40"/>
-                                                                                <constraints>
-                                                                                    <constraint firstAttribute="height" constant="40" id="bjC-Yz-sUS"/>
-                                                                                </constraints>
-                                                                            </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train anywhere, anytime" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-mG-fuy">
                                                                                 <rect key="frame" x="44" y="0.0" width="300" height="40"/>
                                                                                 <constraints>
@@ -828,16 +822,22 @@
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Choose2" translatesAutoresizingMaskIntoConstraints="NO" id="OXI-R9-cmx">
+                                                                                <rect key="frame" x="8" y="9" width="24" height="23"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="23" id="bjC-Yz-sUS"/>
+                                                                                </constraints>
+                                                                            </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="2LS-Gf-B8k"/>
-                                                                            <constraint firstItem="OXI-R9-cmx" firstAttribute="top" secondItem="bOX-ih-lvT" secondAttribute="top" id="Erg-Nd-ECn"/>
-                                                                            <constraint firstItem="OXI-R9-cmx" firstAttribute="leading" secondItem="bOX-ih-lvT" secondAttribute="leading" id="T8r-6o-K6e"/>
+                                                                            <constraint firstItem="OXI-R9-cmx" firstAttribute="top" secondItem="bOX-ih-lvT" secondAttribute="top" constant="9" id="Erg-Nd-ECn"/>
+                                                                            <constraint firstItem="OXI-R9-cmx" firstAttribute="leading" secondItem="bOX-ih-lvT" secondAttribute="leading" constant="8" id="T8r-6o-K6e"/>
                                                                             <constraint firstAttribute="trailing" secondItem="iVF-mG-fuy" secondAttribute="trailing" id="acd-es-0ZD"/>
-                                                                            <constraint firstItem="iVF-mG-fuy" firstAttribute="leading" secondItem="OXI-R9-cmx" secondAttribute="trailing" constant="8" symbolic="YES" id="ov4-sR-noL"/>
+                                                                            <constraint firstItem="iVF-mG-fuy" firstAttribute="leading" secondItem="OXI-R9-cmx" secondAttribute="trailing" constant="12" id="ov4-sR-noL"/>
                                                                             <constraint firstItem="iVF-mG-fuy" firstAttribute="top" secondItem="bOX-ih-lvT" secondAttribute="top" id="qMV-13-q6D"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="OXI-R9-cmx" secondAttribute="trailing" constant="308" id="vQa-xK-sni"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="OXI-R9-cmx" secondAttribute="trailing" constant="312" id="vQa-xK-sni"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rH-NS-VbA">
@@ -6978,7 +6978,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                         <outlet property="namepopup" destination="I8W-ch-elz" id="NRc-Oc-cPv"/>
                         <outlet property="tableView" destination="TMg-k4-Xst" id="W4t-dW-MKl"/>
                         <outlet property="txtFieldEmail" destination="8DN-wh-6XA" id="2NV-Fz-t3L"/>
-                        <outlet property="txtFieldMobileNumber" destination="8DN-wh-6XA" id="bJU-rS-RbZ"/>
+                        <outlet property="txtFieldMobileNumber" destination="wAm-Zx-hE6" id="DLi-As-HFu"/>
                         <outlet property="txtFieldName" destination="I8W-ch-elz" id="8Me-mX-a8H"/>
                         <outlet property="viewBottomTabBar" destination="IwL-GG-fh6" id="gNh-EI-8OX"/>
                         <outlet property="viewMenu" destination="yPM-Hh-O39" id="Kql-uN-Q0T"/>
@@ -24184,7 +24184,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
         <image name="Choose3" width="17" height="24"/>
         <image name="Choose4" width="22" height="27"/>
         <image name="Continuum1" width="177" height="123"/>
-        <image name="Continuum2" width="428" height="94"/>
+        <image name="Continuum2" width="1712" height="373"/>
         <image name="ContinuumPlan" width="358" height="482"/>
         <image name="ElectricalSafetyTrain" width="532" height="428"/>
         <image name="EnrollCareHome" width="428" height="94"/>

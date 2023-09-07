@@ -96,8 +96,8 @@ class CareAtHomeViewController: MenuViewController,UITextFieldDelegate {
 
     func isAllDataValid() -> Bool {
         // Name validation: At least 5 characters
-        guard let name = namepopup.text, name.count >= 5 else { return false }
-        
+        guard let name = namepopup.text, name.count >= 3 else { return false }
+
         // Email validation: Basic check for '@' and '.'
         guard let email = emailpopup.text, isValidEmail(email) else { return false }
 
