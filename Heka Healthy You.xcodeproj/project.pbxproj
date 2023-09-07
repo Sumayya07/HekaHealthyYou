@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07963AB97A7B1D86E73A60CD /* Pods_Heka_Healthy_You.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDE2A8550DAF4702D36F295 /* Pods_Heka_Healthy_You.framework */; };
+		C00E3FBB2A894EAB00399968 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = C00E3FBA2A894EAB00399968 /* MBProgressHUD */; };
+		C00E3FBE2A894ED300399968 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = C00E3FBD2A894ED300399968 /* Reachability */; };
+		C00E3FC02A894F4D00399968 /* APIlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E3FBF2A894F4D00399968 /* APIlist.swift */; };
+		C00E3FC22A894FF200399968 /* UIVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E3FC12A894FF200399968 /* UIVC + Extension.swift */; };
+		C038FE402A938165003CBB68 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038FE3F2A938165003CBB68 /* SignupModel.swift */; };
+		C038FE422A9386F0003CBB68 /* Verifyotpmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038FE412A9386F0003CBB68 /* Verifyotpmodel.swift */; };
+		C038FE442A938C9A003CBB68 /* FetchCustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038FE432A938C9A003CBB68 /* FetchCustomerModel.swift */; };
+		C0A3C4712A656FB80068D69A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3C4702A656FB80068D69A /* UIColor.swift */; };
+		C0B643D32A8986580078BD0E /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = C0B643D22A8986580078BD0E /* Toast */; };
+		C0BF37C92A3844B80058C4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BF37C82A3844B80058C4DB /* AppDelegate.swift */; };
+		C0BF37CB2A3844B80058C4DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BF37CA2A3844B80058C4DB /* SceneDelegate.swift */; };
+		C0BF37CD2A3844B80058C4DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BF37CC2A3844B80058C4DB /* HomeViewController.swift */; };
+		C0BF37D02A3844B80058C4DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BF37CE2A3844B80058C4DB /* Main.storyboard */; };
+		C0BF37D22A3844BA0058C4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BF37D12A3844BA0058C4DB /* Assets.xcassets */; };
+		C0BF37D52A3844BA0058C4DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BF37D32A3844BA0058C4DB /* LaunchScreen.storyboard */; };
+		C0CA904E2A9C6AC9007496D8 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C0CA904D2A9C6AC9007496D8 /* IQKeyboardManagerSwift */; };
+		CA0656302A5FC70500C8A1B5 /* MedicalAstrologyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06562F2A5FC70500C8A1B5 /* MedicalAstrologyTableViewCell.swift */; };
+		CA07BD0A2A46CDA00014AE34 /* SafetyTrainingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA07BD092A46CDA00014AE34 /* SafetyTrainingCVC.swift */; };
+		CA07BD0C2A46D2670014AE34 /* ServiceInformationCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA07BD0B2A46D2670014AE34 /* ServiceInformationCVC.swift */; };
+		CA129EC62A5D256000A5282D /* FAQElderlyCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EC52A5D256000A5282D /* FAQElderlyCareViewController.swift */; };
+		CA129EC82A5D279F00A5282D /* FAQPregnancyCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EC72A5D279F00A5282D /* FAQPregnancyCareViewController.swift */; };
+		CA129ECA2A5D27B800A5282D /* OperativeCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EC92A5D27B800A5282D /* OperativeCareViewController.swift */; };
+		CA129ECC2A5D27CE00A5282D /* DoctorConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129ECB2A5D27CE00A5282D /* DoctorConsultationViewController.swift */; };
+		CA129ECE2A5D27DA00A5282D /* LabTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129ECD2A5D27DA00A5282D /* LabTestViewController.swift */; };
+		CA129ED02A5D27E600A5282D /* PharmacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129ECF2A5D27E600A5282D /* PharmacyViewController.swift */; };
+		CA129ED22A5D27FB00A5282D /* MedicalAstrologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129ED12A5D27FB00A5282D /* MedicalAstrologyViewController.swift */; };
+		CA129ED42A5D280E00A5282D /* OverseasServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129ED32A5D280E00A5282D /* OverseasServiceViewController.swift */; };
+		CA129ED62A5D282000A5282D /* GeneralWellnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129ED52A5D282000A5282D /* GeneralWellnessViewController.swift */; };
+		CA129ED82A5D283F00A5282D /* ElderlyCareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129ED72A5D283F00A5282D /* ElderlyCareTableViewCell.swift */; };
+		CA129EDA2A5D2C6C00A5282D /* PregnancyCareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129ED92A5D2C6C00A5282D /* PregnancyCareTableViewCell.swift */; };
+		CA129EDC2A5D2C7900A5282D /* OperativeCareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EDB2A5D2C7900A5282D /* OperativeCareTableViewCell.swift */; };
+		CA129EDE2A5D2CA100A5282D /* DoctorConsultationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EDD2A5D2CA100A5282D /* DoctorConsultationTableViewCell.swift */; };
+		CA129EE12A5D54F000A5282D /* OverseasServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EE02A5D54F000A5282D /* OverseasServiceTableViewCell.swift */; };
+		CA129EE32A5D550500A5282D /* GeneralWellnessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EE22A5D550500A5282D /* GeneralWellnessTableViewCell.swift */; };
+		CA129EE52A5D882B00A5282D /* LabTestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EE42A5D882B00A5282D /* LabTestTableViewCell.swift */; };
+		CA129EE72A5D883700A5282D /* PharmacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA129EE62A5D883700A5282D /* PharmacyTableViewCell.swift */; };
+		CA146AE62A718FE500FFFA52 /* BLSTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA146AE52A718FE500FFFA52 /* BLSTrainingViewController.swift */; };
+		CA146AE82A71902F00FFFA52 /* ElectricalSafetyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA146AE72A71902F00FFFA52 /* ElectricalSafetyViewController.swift */; };
+		CA18DADC2A584EC4008D7EAA /* LifeSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18DADB2A584EC4008D7EAA /* LifeSupportViewController.swift */; };
+		CA18DAE02A5852C2008D7EAA /* LifeSupportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18DADF2A5852C2008D7EAA /* LifeSupportTableViewCell.swift */; };
+		CA3218E32A572AD000A7C1A0 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3218E22A572AD000A7C1A0 /* FAQViewController.swift */; };
+		CA3BD7AE2A797DE900B96D6D /* ElderlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7AD2A797DE900B96D6D /* ElderlyViewController.swift */; };
+		CA3BD7B02A797E0300B96D6D /* CaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7AF2A797E0300B96D6D /* CaregiverViewController.swift */; };
+		CA3BD7B22A797E1200B96D6D /* ClinicalCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7B12A797E1200B96D6D /* ClinicalCareViewController.swift */; };
+		CA3BD7B42A797E1F00B96D6D /* CareAtHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7B32A797E1F00B96D6D /* CareAtHomeViewController.swift */; };
+		CA3BD7BC2A797E6900B96D6D /* PhysiotheraphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7BB2A797E6900B96D6D /* PhysiotheraphyViewController.swift */; };
+		CA3BD7BE2A797E7600B96D6D /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7BD2A797E7600B96D6D /* RecoveryViewController.swift */; };
+		CA3BD7C02A79831600B96D6D /* ElderlyCareServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7BF2A79831600B96D6D /* ElderlyCareServiceCVC.swift */; };
+		CA3BD7C22A79833900B96D6D /* ElderlyCareSafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7C12A79833900B96D6D /* ElderlyCareSafetyCVC.swift */; };
+		CA685A832A8CD1F4009EDF2C /* OperativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A822A8CD1F4009EDF2C /* OperativeViewController.swift */; };
+		CA685A852A8CD29F009EDF2C /* OperativeServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A842A8CD29F009EDF2C /* OperativeServiceCVC.swift */; };
+		CA685A872A8CD2BA009EDF2C /* OperativeSafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A862A8CD2BA009EDF2C /* OperativeSafetyCVC.swift */; };
+		CA685A892A8CD673009EDF2C /* InjuryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A882A8CD673009EDF2C /* InjuryViewController.swift */; };
+		CA685A8B2A8CD67D009EDF2C /* ChronicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A8A2A8CD67D009EDF2C /* ChronicViewController.swift */; };
+		CA685A8D2A8CD686009EDF2C /* CardiacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A8C2A8CD686009EDF2C /* CardiacViewController.swift */; };
+		CA685A8F2A8CD691009EDF2C /* WoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A8E2A8CD691009EDF2C /* WoundViewController.swift */; };
+		CA7347662A7CC05700F44962 /* PregnancyCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7347652A7CC05700F44962 /* PregnancyCareViewController.swift */; };
+		CA7347682A7CC07000F44962 /* PrenatalCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7347672A7CC07000F44962 /* PrenatalCareViewController.swift */; };
+		CA73476A2A7CC07E00F44962 /* PostPregnancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7347692A7CC07E00F44962 /* PostPregnancyViewController.swift */; };
+		CA73476C2A7CC08C00F44962 /* ContinuumCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73476B2A7CC08C00F44962 /* ContinuumCareViewController.swift */; };
+		CA73476E2A7CC31A00F44962 /* PregnancyServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73476D2A7CC31A00F44962 /* PregnancyServiceCVC.swift */; };
+		CA7347702A7CC32E00F44962 /* PregnancySafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73476F2A7CC32E00F44962 /* PregnancySafetyCVC.swift */; };
+		CA787EBF2A605E4900CAE942 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA787EBE2A605E4900CAE942 /* LoginViewController.swift */; };
+		CA787EC12A605EFB00CAE942 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA787EC02A605EFB00CAE942 /* SignupViewController.swift */; };
+		CA78BEE62A42CAD400739640 /* HomeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA78BEE52A42CAD400739640 /* HomeCVC.swift */; };
+		CA82C4D72A78287C00BDCCCB /* ScheduleCallPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA82C4D62A78287C00BDCCCB /* ScheduleCallPopup.xib */; };
+		CA8E55982A7A773D00D8D1C0 /* ReferredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E55972A7A773D00D8D1C0 /* ReferredTableViewCell.swift */; };
+		CA9277852A532EBD00D8B287 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9277842A532EBC00D8B287 /* AboutUsViewController.swift */; };
+		CA9277892A53404A00D8B287 /* AboutUsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9277882A53404A00D8B287 /* AboutUsCVC.swift */; };
+		CA9C9B562A573D8000781325 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C9B552A573D8000781325 /* FAQTableViewCell.swift */; };
+		CA9DB65B2A96643200E8180B /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DB65A2A96643200E8180B /* LogoutViewController.swift */; };
+		CA9EE2072A4F29B3003187F8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9EE2062A4F29B3003187F8 /* HomeTableViewCell.swift */; };
+		CAAA06DB2A94F705006DBAF7 /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAA06DA2A94F705006DBAF7 /* userData.swift */; };
+		CAAAEBCC2A7A5F6E005D85B4 /* LookingDropdownPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAAEBCB2A7A5F6E005D85B4 /* LookingDropdownPopup.xib */; };
+		CAAAEBCE2A7A62D8005D85B4 /* LookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAEBCD2A7A62D8005D85B4 /* LookingTableViewCell.swift */; };
+		CAACF9152A71421F002D0182 /* FirstAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAACF9142A71421F002D0182 /* FirstAidViewController.swift */; };
+		CAACF9172A718B51002D0182 /* RoadSafetyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAACF9162A718B51002D0182 /* RoadSafetyViewController.swift */; };
+		CAC6E37E2A43124F00586651 /* UIButton + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6E37D2A43124F00586651 /* UIButton + Ext.swift */; };
+		CAD27E732A73D6AD00C8AB5C /* EnquireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD27E722A73D6AD00C8AB5C /* EnquireViewController.swift */; };
+		CADB51412A55DC0A0069996A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADB51402A55DC0A0069996A /* MenuViewController.swift */; };
+		CAF19D042A42E1C9002322FB /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF19D032A42E1C9002322FB /* TrainingViewController.swift */; };
+		CAFCA5412A828E1000E503DB /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCA5402A828E1000E503DB /* BasicViewController.swift */; };
+		CAFCA5432A828E2000E503DB /* StandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCA5422A828E2000E503DB /* StandardViewController.swift */; };
+		CAFCA5452A828E5100E503DB /* OptimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCA5442A828E5100E503DB /* OptimalViewController.swift */; };
+		CAFCA54D2A828EB500E503DB /* ThreeMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCA54C2A828EB500E503DB /* ThreeMonthViewController.swift */; };
+		CAFCA54F2A828EBF00E503DB /* SixMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCA54E2A828EBF00E503DB /* SixMonthViewController.swift */; };
+		CAFCA5512A828EC600E503DB /* NineMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCA5502A828EC600E503DB /* NineMonthViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1EB68C1066A52FE7C91B8C7E /* Pods-Heka Healthy You.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heka Healthy You.release.xcconfig"; path = "Target Support Files/Pods-Heka Healthy You/Pods-Heka Healthy You.release.xcconfig"; sourceTree = "<group>"; };
+		4774290050FEC30255B93678 /* Pods-Heka Healthy You.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heka Healthy You.debug.xcconfig"; path = "Target Support Files/Pods-Heka Healthy You/Pods-Heka Healthy You.debug.xcconfig"; sourceTree = "<group>"; };
+		BEDE2A8550DAF4702D36F295 /* Pods_Heka_Healthy_You.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heka_Healthy_You.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00E3FBF2A894F4D00399968 /* APIlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIlist.swift; sourceTree = "<group>"; };
+		C00E3FC12A894FF200399968 /* UIVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVC + Extension.swift"; sourceTree = "<group>"; };
+		C038FE3F2A938165003CBB68 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		C038FE412A9386F0003CBB68 /* Verifyotpmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verifyotpmodel.swift; sourceTree = "<group>"; };
+		C038FE432A938C9A003CBB68 /* FetchCustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCustomerModel.swift; sourceTree = "<group>"; };
+		C0A3C4702A656FB80068D69A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C0BF37C52A3844B80058C4DB /* Heka Healthy You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heka Healthy You.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BF37C82A3844B80058C4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0BF37CA2A3844B80058C4DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C0BF37CC2A3844B80058C4DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C0BF37CF2A3844B80058C4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0BF37D12A3844BA0058C4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0BF37D42A3844BA0058C4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0BF37D62A3844BA0058C4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA06562F2A5FC70500C8A1B5 /* MedicalAstrologyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalAstrologyTableViewCell.swift; sourceTree = "<group>"; };
+		CA07BD092A46CDA00014AE34 /* SafetyTrainingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTrainingCVC.swift; sourceTree = "<group>"; };
+		CA07BD0B2A46D2670014AE34 /* ServiceInformationCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInformationCVC.swift; sourceTree = "<group>"; };
+		CA129EC52A5D256000A5282D /* FAQElderlyCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQElderlyCareViewController.swift; sourceTree = "<group>"; };
+		CA129EC72A5D279F00A5282D /* FAQPregnancyCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQPregnancyCareViewController.swift; sourceTree = "<group>"; };
+		CA129EC92A5D27B800A5282D /* OperativeCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperativeCareViewController.swift; sourceTree = "<group>"; };
+		CA129ECB2A5D27CE00A5282D /* DoctorConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorConsultationViewController.swift; sourceTree = "<group>"; };
+		CA129ECD2A5D27DA00A5282D /* LabTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTestViewController.swift; sourceTree = "<group>"; };
+		CA129ECF2A5D27E600A5282D /* PharmacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyViewController.swift; sourceTree = "<group>"; };
+		CA129ED12A5D27FB00A5282D /* MedicalAstrologyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalAstrologyViewController.swift; sourceTree = "<group>"; };
+		CA129ED32A5D280E00A5282D /* OverseasServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverseasServiceViewController.swift; sourceTree = "<group>"; };
+		CA129ED52A5D282000A5282D /* GeneralWellnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralWellnessViewController.swift; sourceTree = "<group>"; };
+		CA129ED72A5D283F00A5282D /* ElderlyCareTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElderlyCareTableViewCell.swift; sourceTree = "<group>"; };
+		CA129ED92A5D2C6C00A5282D /* PregnancyCareTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyCareTableViewCell.swift; sourceTree = "<group>"; };
+		CA129EDB2A5D2C7900A5282D /* OperativeCareTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperativeCareTableViewCell.swift; sourceTree = "<group>"; };
+		CA129EDD2A5D2CA100A5282D /* DoctorConsultationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorConsultationTableViewCell.swift; sourceTree = "<group>"; };
+		CA129EE02A5D54F000A5282D /* OverseasServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverseasServiceTableViewCell.swift; sourceTree = "<group>"; };
+		CA129EE22A5D550500A5282D /* GeneralWellnessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralWellnessTableViewCell.swift; sourceTree = "<group>"; };
+		CA129EE42A5D882B00A5282D /* LabTestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTestTableViewCell.swift; sourceTree = "<group>"; };
+		CA129EE62A5D883700A5282D /* PharmacyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyTableViewCell.swift; sourceTree = "<group>"; };
+		CA146AE52A718FE500FFFA52 /* BLSTrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLSTrainingViewController.swift; sourceTree = "<group>"; };
+		CA146AE72A71902F00FFFA52 /* ElectricalSafetyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricalSafetyViewController.swift; sourceTree = "<group>"; };
+		CA18DADB2A584EC4008D7EAA /* LifeSupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeSupportViewController.swift; sourceTree = "<group>"; };
+		CA18DADF2A5852C2008D7EAA /* LifeSupportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeSupportTableViewCell.swift; sourceTree = "<group>"; };
+		CA3218E22A572AD000A7C1A0 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		CA3BD7AD2A797DE900B96D6D /* ElderlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElderlyViewController.swift; sourceTree = "<group>"; };
+		CA3BD7AF2A797E0300B96D6D /* CaregiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaregiverViewController.swift; sourceTree = "<group>"; };
+		CA3BD7B12A797E1200B96D6D /* ClinicalCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalCareViewController.swift; sourceTree = "<group>"; };
+		CA3BD7B32A797E1F00B96D6D /* CareAtHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareAtHomeViewController.swift; sourceTree = "<group>"; };
+		CA3BD7BB2A797E6900B96D6D /* PhysiotheraphyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysiotheraphyViewController.swift; sourceTree = "<group>"; };
+		CA3BD7BD2A797E7600B96D6D /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
+		CA3BD7BF2A79831600B96D6D /* ElderlyCareServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElderlyCareServiceCVC.swift; sourceTree = "<group>"; };
+		CA3BD7C12A79833900B96D6D /* ElderlyCareSafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElderlyCareSafetyCVC.swift; sourceTree = "<group>"; };
+		CA685A822A8CD1F4009EDF2C /* OperativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperativeViewController.swift; sourceTree = "<group>"; };
+		CA685A842A8CD29F009EDF2C /* OperativeServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperativeServiceCVC.swift; sourceTree = "<group>"; };
+		CA685A862A8CD2BA009EDF2C /* OperativeSafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperativeSafetyCVC.swift; sourceTree = "<group>"; };
+		CA685A882A8CD673009EDF2C /* InjuryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryViewController.swift; sourceTree = "<group>"; };
+		CA685A8A2A8CD67D009EDF2C /* ChronicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronicViewController.swift; sourceTree = "<group>"; };
+		CA685A8C2A8CD686009EDF2C /* CardiacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardiacViewController.swift; sourceTree = "<group>"; };
+		CA685A8E2A8CD691009EDF2C /* WoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoundViewController.swift; sourceTree = "<group>"; };
+		CA7347652A7CC05700F44962 /* PregnancyCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyCareViewController.swift; sourceTree = "<group>"; };
+		CA7347672A7CC07000F44962 /* PrenatalCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrenatalCareViewController.swift; sourceTree = "<group>"; };
+		CA7347692A7CC07E00F44962 /* PostPregnancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPregnancyViewController.swift; sourceTree = "<group>"; };
+		CA73476B2A7CC08C00F44962 /* ContinuumCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuumCareViewController.swift; sourceTree = "<group>"; };
+		CA73476D2A7CC31A00F44962 /* PregnancyServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyServiceCVC.swift; sourceTree = "<group>"; };
+		CA73476F2A7CC32E00F44962 /* PregnancySafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancySafetyCVC.swift; sourceTree = "<group>"; };
+		CA787EBE2A605E4900CAE942 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA787EC02A605EFB00CAE942 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		CA78BEE52A42CAD400739640 /* HomeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVC.swift; sourceTree = "<group>"; };
+		CA82C4D62A78287C00BDCCCB /* ScheduleCallPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCallPopup.xib; sourceTree = "<group>"; };
+		CA8E55972A7A773D00D8D1C0 /* ReferredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferredTableViewCell.swift; sourceTree = "<group>"; };
+		CA9277842A532EBC00D8B287 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		CA9277882A53404A00D8B287 /* AboutUsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsCVC.swift; sourceTree = "<group>"; };
+		CA9C9B552A573D8000781325 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		CA9DB65A2A96643200E8180B /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		CA9EE2062A4F29B3003187F8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		CAAA06DA2A94F705006DBAF7 /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
+		CAAAEBCB2A7A5F6E005D85B4 /* LookingDropdownPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LookingDropdownPopup.xib; sourceTree = "<group>"; };
+		CAAAEBCD2A7A62D8005D85B4 /* LookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingTableViewCell.swift; sourceTree = "<group>"; };
+		CAACF9142A71421F002D0182 /* FirstAidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidViewController.swift; sourceTree = "<group>"; };
+		CAACF9162A718B51002D0182 /* RoadSafetyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSafetyViewController.swift; sourceTree = "<group>"; };
+		CAC6E37D2A43124F00586651 /* UIButton + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Ext.swift"; sourceTree = "<group>"; };
+		CAD27E722A73D6AD00C8AB5C /* EnquireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnquireViewController.swift; sourceTree = "<group>"; };
+		CADB51402A55DC0A0069996A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CAF19D032A42E1C9002322FB /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		CAFCA5402A828E1000E503DB /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		CAFCA5422A828E2000E503DB /* StandardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardViewController.swift; sourceTree = "<group>"; };
+		CAFCA5442A828E5100E503DB /* OptimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalViewController.swift; sourceTree = "<group>"; };
+		CAFCA54C2A828EB500E503DB /* ThreeMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMonthViewController.swift; sourceTree = "<group>"; };
+		CAFCA54E2A828EBF00E503DB /* SixMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixMonthViewController.swift; sourceTree = "<group>"; };
+		CAFCA5502A828EC600E503DB /* NineMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineMonthViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0BF37C22A3844B80058C4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA904E2A9C6AC9007496D8 /* IQKeyboardManagerSwift in Frameworks */,
+				C0B643D32A8986580078BD0E /* Toast in Frameworks */,
+				C00E3FBB2A894EAB00399968 /* MBProgressHUD in Frameworks */,
+				C00E3FBE2A894ED300399968 /* Reachability in Frameworks */,
+				07963AB97A7B1D86E73A60CD /* Pods_Heka_Healthy_You.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B6650319ABEBA9AC1D8A32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4774290050FEC30255B93678 /* Pods-Heka Healthy You.debug.xcconfig */,
+				1EB68C1066A52FE7C91B8C7E /* Pods-Heka Healthy You.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		646E4218E1F6D5C56B59AA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE2A8550DAF4702D36F295 /* Pods_Heka_Healthy_You.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C038FE3E2A938148003CBB68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C038FE3F2A938165003CBB68 /* SignupModel.swift */,
+				C038FE412A9386F0003CBB68 /* Verifyotpmodel.swift */,
+				C038FE432A938C9A003CBB68 /* FetchCustomerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0BF37BC2A3844B80058C4DB = {
+			isa = PBXGroup;
+			children = (
+				C0BF37C72A3844B80058C4DB /* Heka Healthy You */,
+				C0BF37C62A3844B80058C4DB /* Products */,
+				07B6650319ABEBA9AC1D8A32 /* Pods */,
+				646E4218E1F6D5C56B59AA05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0BF37C62A3844B80058C4DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0BF37C52A3844B80058C4DB /* Heka Healthy You.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0BF37C72A3844B80058C4DB /* Heka Healthy You */ = {
+			isa = PBXGroup;
+			children = (
+				C0BF37C82A3844B80058C4DB /* AppDelegate.swift */,
+				C0BF37CA2A3844B80058C4DB /* SceneDelegate.swift */,
+				CA78BEE72A42D0CC00739640 /* View */,
+				C038FE3E2A938148003CBB68 /* Model */,
+				CA78BEE82A42D0EF00739640 /* Controller */,
+				CA78BEE92A42D10800739640 /* Cell */,
+				CAC6E37C2A43122F00586651 /* Extension */,
+				C0BF37D12A3844BA0058C4DB /* Assets.xcassets */,
+				C0BF37D62A3844BA0058C4DB /* Info.plist */,
+			);
+			path = "Heka Healthy You";
+			sourceTree = "<group>";
+		};
+		CA129EDF2A5D2CA800A5282D /* FAQTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA9C9B552A573D8000781325 /* FAQTableViewCell.swift */,
+				CA18DADF2A5852C2008D7EAA /* LifeSupportTableViewCell.swift */,
+				CA129ED72A5D283F00A5282D /* ElderlyCareTableViewCell.swift */,
+				CA129ED92A5D2C6C00A5282D /* PregnancyCareTableViewCell.swift */,
+				CA129EDB2A5D2C7900A5282D /* OperativeCareTableViewCell.swift */,
+				CA129EDD2A5D2CA100A5282D /* DoctorConsultationTableViewCell.swift */,
+				CA129EE02A5D54F000A5282D /* OverseasServiceTableViewCell.swift */,
+				CA129EE22A5D550500A5282D /* GeneralWellnessTableViewCell.swift */,
+				CA129EE42A5D882B00A5282D /* LabTestTableViewCell.swift */,
+				CA129EE62A5D883700A5282D /* PharmacyTableViewCell.swift */,
+				CA06562F2A5FC70500C8A1B5 /* MedicalAstrologyTableViewCell.swift */,
+			);
+			path = FAQTableViewCell;
+			sourceTree = "<group>";
+		};
+		CA18DADA2A584EAA008D7EAA /* FAQControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA3218E22A572AD000A7C1A0 /* FAQViewController.swift */,
+				CA18DADB2A584EC4008D7EAA /* LifeSupportViewController.swift */,
+				CA129EC52A5D256000A5282D /* FAQElderlyCareViewController.swift */,
+				CA129EC72A5D279F00A5282D /* FAQPregnancyCareViewController.swift */,
+				CA129EC92A5D27B800A5282D /* OperativeCareViewController.swift */,
+				CA129ECB2A5D27CE00A5282D /* DoctorConsultationViewController.swift */,
+				CA129ECD2A5D27DA00A5282D /* LabTestViewController.swift */,
+				CA129ECF2A5D27E600A5282D /* PharmacyViewController.swift */,
+				CA129ED12A5D27FB00A5282D /* MedicalAstrologyViewController.swift */,
+				CA129ED32A5D280E00A5282D /* OverseasServiceViewController.swift */,
+				CA129ED52A5D282000A5282D /* GeneralWellnessViewController.swift */,
+			);
+			path = FAQControllers;
+			sourceTree = "<group>";
+		};
+		CA18DADD2A585262008D7EAA /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA9277882A53404A00D8B287 /* AboutUsCVC.swift */,
+				CA78BEE52A42CAD400739640 /* HomeCVC.swift */,
+				CA07BD0B2A46D2670014AE34 /* ServiceInformationCVC.swift */,
+				CA07BD092A46CDA00014AE34 /* SafetyTrainingCVC.swift */,
+				CA3BD7BF2A79831600B96D6D /* ElderlyCareServiceCVC.swift */,
+				CA3BD7C12A79833900B96D6D /* ElderlyCareSafetyCVC.swift */,
+				CA73476D2A7CC31A00F44962 /* PregnancyServiceCVC.swift */,
+				CA73476F2A7CC32E00F44962 /* PregnancySafetyCVC.swift */,
+				CA685A842A8CD29F009EDF2C /* OperativeServiceCVC.swift */,
+				CA685A862A8CD2BA009EDF2C /* OperativeSafetyCVC.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CA18DADE2A58526E008D7EAA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA129EDF2A5D2CA800A5282D /* FAQTableViewCell */,
+				CA9EE2062A4F29B3003187F8 /* HomeTableViewCell.swift */,
+				CAAAEBCD2A7A62D8005D85B4 /* LookingTableViewCell.swift */,
+				CA8E55972A7A773D00D8D1C0 /* ReferredTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CA3BD7AC2A797DBE00B96D6D /* ElderlyCareControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA3BD7AD2A797DE900B96D6D /* ElderlyViewController.swift */,
+				CA3BD7AF2A797E0300B96D6D /* CaregiverViewController.swift */,
+				CA3BD7B12A797E1200B96D6D /* ClinicalCareViewController.swift */,
+				CA3BD7B32A797E1F00B96D6D /* CareAtHomeViewController.swift */,
+				CA3BD7BB2A797E6900B96D6D /* PhysiotheraphyViewController.swift */,
+				CA3BD7BD2A797E7600B96D6D /* RecoveryViewController.swift */,
+			);
+			path = ElderlyCareControllers;
+			sourceTree = "<group>";
+		};
+		CA685A812A8CD1C7009EDF2C /* OperativeCareControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA685A822A8CD1F4009EDF2C /* OperativeViewController.swift */,
+				CA685A882A8CD673009EDF2C /* InjuryViewController.swift */,
+				CA685A8A2A8CD67D009EDF2C /* ChronicViewController.swift */,
+				CA685A8C2A8CD686009EDF2C /* CardiacViewController.swift */,
+				CA685A8E2A8CD691009EDF2C /* WoundViewController.swift */,
+			);
+			path = OperativeCareControllers;
+			sourceTree = "<group>";
+		};
+		CA7347642A7CBFE100F44962 /* PregnancyCareControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA7347652A7CC05700F44962 /* PregnancyCareViewController.swift */,
+				CA7347672A7CC07000F44962 /* PrenatalCareViewController.swift */,
+				CA7347692A7CC07E00F44962 /* PostPregnancyViewController.swift */,
+				CA73476B2A7CC08C00F44962 /* ContinuumCareViewController.swift */,
+			);
+			path = PregnancyCareControllers;
+			sourceTree = "<group>";
+		};
+		CA78BEE72A42D0CC00739640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0BF37CE2A3844B80058C4DB /* Main.storyboard */,
+				C0BF37D32A3844BA0058C4DB /* LaunchScreen.storyboard */,
+				CAAAEBCA2A7A5F49005D85B4 /* CustomUIPopup */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA78BEE82A42D0EF00739640 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA685A812A8CD1C7009EDF2C /* OperativeCareControllers */,
+				CAFCA53F2A828DF600E503DB /* PlansControllers */,
+				CA7347642A7CBFE100F44962 /* PregnancyCareControllers */,
+				CA3BD7AC2A797DBE00B96D6D /* ElderlyCareControllers */,
+				CAD27E712A73D65000C8AB5C /* SafetyTrainingControllers */,
+				CA18DADA2A584EAA008D7EAA /* FAQControllers */,
+				C0BF37CC2A3844B80058C4DB /* HomeViewController.swift */,
+				CA9277842A532EBC00D8B287 /* AboutUsViewController.swift */,
+				CADB51402A55DC0A0069996A /* MenuViewController.swift */,
+				CA787EBE2A605E4900CAE942 /* LoginViewController.swift */,
+				CA787EC02A605EFB00CAE942 /* SignupViewController.swift */,
+				CAD27E722A73D6AD00C8AB5C /* EnquireViewController.swift */,
+				CA9DB65A2A96643200E8180B /* LogoutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA78BEE92A42D10800739640 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CA18DADE2A58526E008D7EAA /* TableViewCell */,
+				CA18DADD2A585262008D7EAA /* CollectionViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CAAAEBCA2A7A5F49005D85B4 /* CustomUIPopup */ = {
+			isa = PBXGroup;
+			children = (
+				CA82C4D62A78287C00BDCCCB /* ScheduleCallPopup.xib */,
+				CAAAEBCB2A7A5F6E005D85B4 /* LookingDropdownPopup.xib */,
+			);
+			path = CustomUIPopup;
+			sourceTree = "<group>";
+		};
+		CAC6E37C2A43122F00586651 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CAC6E37D2A43124F00586651 /* UIButton + Ext.swift */,
+				C0A3C4702A656FB80068D69A /* UIColor.swift */,
+				C00E3FBF2A894F4D00399968 /* APIlist.swift */,
+				C00E3FC12A894FF200399968 /* UIVC + Extension.swift */,
+				CAAA06DA2A94F705006DBAF7 /* userData.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CAD27E712A73D65000C8AB5C /* SafetyTrainingControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAF19D032A42E1C9002322FB /* TrainingViewController.swift */,
+				CA146AE72A71902F00FFFA52 /* ElectricalSafetyViewController.swift */,
+				CA146AE52A718FE500FFFA52 /* BLSTrainingViewController.swift */,
+				CAACF9162A718B51002D0182 /* RoadSafetyViewController.swift */,
+				CAACF9142A71421F002D0182 /* FirstAidViewController.swift */,
+			);
+			path = SafetyTrainingControllers;
+			sourceTree = "<group>";
+		};
+		CAFCA53F2A828DF600E503DB /* PlansControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAFCA5402A828E1000E503DB /* BasicViewController.swift */,
+				CAFCA5422A828E2000E503DB /* StandardViewController.swift */,
+				CAFCA5442A828E5100E503DB /* OptimalViewController.swift */,
+				CAFCA54C2A828EB500E503DB /* ThreeMonthViewController.swift */,
+				CAFCA54E2A828EBF00E503DB /* SixMonthViewController.swift */,
+				CAFCA5502A828EC600E503DB /* NineMonthViewController.swift */,
+			);
+			path = PlansControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0BF37C42A3844B80058C4DB /* Heka Healthy You */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0BF37D92A3844BA0058C4DB /* Build configuration list for PBXNativeTarget "Heka Healthy You" */;
+			buildPhases = (
+				BB447B4E6934B102944EA8E5 /* [CP] Check Pods Manifest.lock */,
+				C0BF37C12A3844B80058C4DB /* Sources */,
+				C0BF37C22A3844B80058C4DB /* Frameworks */,
+				C0BF37C32A3844B80058C4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heka Healthy You";
+			packageProductDependencies = (
+				C00E3FBA2A894EAB00399968 /* MBProgressHUD */,
+				C00E3FBD2A894ED300399968 /* Reachability */,
+				C0B643D22A8986580078BD0E /* Toast */,
+				C0CA904D2A9C6AC9007496D8 /* IQKeyboardManagerSwift */,
+			);
+			productName = "Heka Healthy You";
+			productReference = C0BF37C52A3844B80058C4DB /* Heka Healthy You.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0BF37BD2A3844B80058C4DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C0BF37C42A3844B80058C4DB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C0BF37C02A3844B80058C4DB /* Build configuration list for PBXProject "Heka Healthy You" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0BF37BC2A3844B80058C4DB;
+			packageReferences = (
+				C00E3FB92A894EAB00399968 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				C00E3FBC2A894ED300399968 /* XCRemoteSwiftPackageReference "Reachability" */,
+				C0B643D12A8986580078BD0E /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				C0CA904C2A9C6AC9007496D8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = C0BF37C62A3844B80058C4DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0BF37C42A3844B80058C4DB /* Heka Healthy You */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0BF37C32A3844B80058C4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BF37D52A3844BA0058C4DB /* LaunchScreen.storyboard in Resources */,
+				C0BF37D22A3844BA0058C4DB /* Assets.xcassets in Resources */,
+				C0BF37D02A3844B80058C4DB /* Main.storyboard in Resources */,
+				CA82C4D72A78287C00BDCCCB /* ScheduleCallPopup.xib in Resources */,
+				CAAAEBCC2A7A5F6E005D85B4 /* LookingDropdownPopup.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB447B4E6934B102944EA8E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Heka Healthy You-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0BF37C12A3844B80058C4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA787EBF2A605E4900CAE942 /* LoginViewController.swift in Sources */,
+				CA3BD7BC2A797E6900B96D6D /* PhysiotheraphyViewController.swift in Sources */,
+				CA129EDC2A5D2C7900A5282D /* OperativeCareTableViewCell.swift in Sources */,
+				CA685A832A8CD1F4009EDF2C /* OperativeViewController.swift in Sources */,
+				CA73476A2A7CC07E00F44962 /* PostPregnancyViewController.swift in Sources */,
+				CA9277892A53404A00D8B287 /* AboutUsCVC.swift in Sources */,
+				CA129EE32A5D550500A5282D /* GeneralWellnessTableViewCell.swift in Sources */,
+				CA9277852A532EBD00D8B287 /* AboutUsViewController.swift in Sources */,
+				CAFCA5512A828EC600E503DB /* NineMonthViewController.swift in Sources */,
+				C038FE402A938165003CBB68 /* SignupModel.swift in Sources */,
+				CA0656302A5FC70500C8A1B5 /* MedicalAstrologyTableViewCell.swift in Sources */,
+				CAACF9152A71421F002D0182 /* FirstAidViewController.swift in Sources */,
+				CA787EC12A605EFB00CAE942 /* SignupViewController.swift in Sources */,
+				CA685A8D2A8CD686009EDF2C /* CardiacViewController.swift in Sources */,
+				CA129EE12A5D54F000A5282D /* OverseasServiceTableViewCell.swift in Sources */,
+				CA129ECC2A5D27CE00A5282D /* DoctorConsultationViewController.swift in Sources */,
+				C0BF37CD2A3844B80058C4DB /* HomeViewController.swift in Sources */,
+				CA685A8F2A8CD691009EDF2C /* WoundViewController.swift in Sources */,
+				CA3BD7B02A797E0300B96D6D /* CaregiverViewController.swift in Sources */,
+				CA129EE52A5D882B00A5282D /* LabTestTableViewCell.swift in Sources */,
+				CAFCA5432A828E2000E503DB /* StandardViewController.swift in Sources */,
+				CA129EC82A5D279F00A5282D /* FAQPregnancyCareViewController.swift in Sources */,
+				CA9DB65B2A96643200E8180B /* LogoutViewController.swift in Sources */,
+				CA73476C2A7CC08C00F44962 /* ContinuumCareViewController.swift in Sources */,
+				CA18DADC2A584EC4008D7EAA /* LifeSupportViewController.swift in Sources */,
+				CA7347662A7CC05700F44962 /* PregnancyCareViewController.swift in Sources */,
+				CA129EE72A5D883700A5282D /* PharmacyTableViewCell.swift in Sources */,
+				C00E3FC22A894FF200399968 /* UIVC + Extension.swift in Sources */,
+				CA18DAE02A5852C2008D7EAA /* LifeSupportTableViewCell.swift in Sources */,
+				CA129ED62A5D282000A5282D /* GeneralWellnessViewController.swift in Sources */,
+				CA73476E2A7CC31A00F44962 /* PregnancyServiceCVC.swift in Sources */,
+				CA07BD0C2A46D2670014AE34 /* ServiceInformationCVC.swift in Sources */,
+				CA685A852A8CD29F009EDF2C /* OperativeServiceCVC.swift in Sources */,
+				CA129ECA2A5D27B800A5282D /* OperativeCareViewController.swift in Sources */,
+				C0BF37C92A3844B80058C4DB /* AppDelegate.swift in Sources */,
+				CA07BD0A2A46CDA00014AE34 /* SafetyTrainingCVC.swift in Sources */,
+				CA129ED02A5D27E600A5282D /* PharmacyViewController.swift in Sources */,
+				CA146AE62A718FE500FFFA52 /* BLSTrainingViewController.swift in Sources */,
+				CAF19D042A42E1C9002322FB /* TrainingViewController.swift in Sources */,
+				CA3BD7B42A797E1F00B96D6D /* CareAtHomeViewController.swift in Sources */,
+				C0A3C4712A656FB80068D69A /* UIColor.swift in Sources */,
+				CADB51412A55DC0A0069996A /* MenuViewController.swift in Sources */,
+				CA3BD7C02A79831600B96D6D /* ElderlyCareServiceCVC.swift in Sources */,
+				CA9C9B562A573D8000781325 /* FAQTableViewCell.swift in Sources */,
+				CA146AE82A71902F00FFFA52 /* ElectricalSafetyViewController.swift in Sources */,
+				C038FE422A9386F0003CBB68 /* Verifyotpmodel.swift in Sources */,
+				CAACF9172A718B51002D0182 /* RoadSafetyViewController.swift in Sources */,
+				CAC6E37E2A43124F00586651 /* UIButton + Ext.swift in Sources */,
+				CA129ECE2A5D27DA00A5282D /* LabTestViewController.swift in Sources */,
+				C038FE442A938C9A003CBB68 /* FetchCustomerModel.swift in Sources */,
+				CA129EDE2A5D2CA100A5282D /* DoctorConsultationTableViewCell.swift in Sources */,
+				CA9EE2072A4F29B3003187F8 /* HomeTableViewCell.swift in Sources */,
+				CAFCA54D2A828EB500E503DB /* ThreeMonthViewController.swift in Sources */,
+				CAFCA54F2A828EBF00E503DB /* SixMonthViewController.swift in Sources */,
+				CA3BD7AE2A797DE900B96D6D /* ElderlyViewController.swift in Sources */,
+				CA3218E32A572AD000A7C1A0 /* FAQViewController.swift in Sources */,
+				CA3BD7BE2A797E7600B96D6D /* RecoveryViewController.swift in Sources */,
+				C0BF37CB2A3844B80058C4DB /* SceneDelegate.swift in Sources */,
+				CA3BD7B22A797E1200B96D6D /* ClinicalCareViewController.swift in Sources */,
+				CA685A8B2A8CD67D009EDF2C /* ChronicViewController.swift in Sources */,
+				CA129EDA2A5D2C6C00A5282D /* PregnancyCareTableViewCell.swift in Sources */,
+				CAFCA5452A828E5100E503DB /* OptimalViewController.swift in Sources */,
+				CA685A872A8CD2BA009EDF2C /* OperativeSafetyCVC.swift in Sources */,
+				CA7347682A7CC07000F44962 /* PrenatalCareViewController.swift in Sources */,
+				CA685A892A8CD673009EDF2C /* InjuryViewController.swift in Sources */,
+				CA129EC62A5D256000A5282D /* FAQElderlyCareViewController.swift in Sources */,
+				CA3BD7C22A79833900B96D6D /* ElderlyCareSafetyCVC.swift in Sources */,
+				CA78BEE62A42CAD400739640 /* HomeCVC.swift in Sources */,
+				CAAAEBCE2A7A62D8005D85B4 /* LookingTableViewCell.swift in Sources */,
+				C00E3FC02A894F4D00399968 /* APIlist.swift in Sources */,
+				CA129ED42A5D280E00A5282D /* OverseasServiceViewController.swift in Sources */,
+				CAFCA5412A828E1000E503DB /* BasicViewController.swift in Sources */,
+				CA8E55982A7A773D00D8D1C0 /* ReferredTableViewCell.swift in Sources */,
+				CA7347702A7CC32E00F44962 /* PregnancySafetyCVC.swift in Sources */,
+				CAAA06DB2A94F705006DBAF7 /* userData.swift in Sources */,
+				CA129ED82A5D283F00A5282D /* ElderlyCareTableViewCell.swift in Sources */,
+				CAD27E732A73D6AD00C8AB5C /* EnquireViewController.swift in Sources */,
+				CA129ED22A5D27FB00A5282D /* MedicalAstrologyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C0BF37CE2A3844B80058C4DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0BF37CF2A3844B80058C4DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0BF37D32A3844BA0058C4DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0BF37D42A3844BA0058C4DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0BF37D72A3844BA0058C4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0BF37D82A3844BA0058C4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0BF37DA2A3844BA0058C4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4774290050FEC30255B93678 /* Pods-Heka Healthy You.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SYPVZ7WB5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Heka Healthy You/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saeem.Heka-Healthy-You";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0BF37DB2A3844BA0058C4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB68C1066A52FE7C91B8C7E /* Pods-Heka Healthy You.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SYPVZ7WB5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Heka Healthy You/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saeem.Heka-Healthy-You";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0BF37C02A3844B80058C4DB /* Build configuration list for PBXProject "Heka Healthy You" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BF37D72A3844BA0058C4DB /* Debug */,
+				C0BF37D82A3844BA0058C4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0BF37D92A3844BA0058C4DB /* Build configuration list for PBXNativeTarget "Heka Healthy You" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BF37DA2A3844BA0058C4DB /* Debug */,
+				C0BF37DB2A3844BA0058C4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C00E3FB92A894EAB00399968 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		C00E3FBC2A894ED300399968 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C0B643D12A8986580078BD0E /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C0CA904C2A9C6AC9007496D8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C00E3FBA2A894EAB00399968 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C00E3FB92A894EAB00399968 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		C00E3FBD2A894ED300399968 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C00E3FBC2A894ED300399968 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		C0B643D22A8986580078BD0E /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0B643D12A8986580078BD0E /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		C0CA904D2A9C6AC9007496D8 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0CA904C2A9C6AC9007496D8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C0BF37BD2A3844B80058C4DB /* Project object */;
+}
