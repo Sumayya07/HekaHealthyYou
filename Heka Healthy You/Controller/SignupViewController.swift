@@ -174,7 +174,7 @@ extension SignupViewController {
             print("Sending User Registration request with data: \(params)")
             
             // Save user data to the singleton once registration is confirmed successful
-            let user = User(email: email, lastName: lastName, firstName: firstName, customerId: self.customerId ?? "")
+            let user = User(email: email, lastName: lastName, firstName: firstName, customerId: self.customerId ?? "", mobileNumber: "")
             UserManager.shared.currentUser = user
             
             let dataBody = createDataBody(withParameters: params, boundary: boundary)

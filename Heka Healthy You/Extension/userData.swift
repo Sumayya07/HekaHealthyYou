@@ -11,6 +11,8 @@ struct User {
     var lastName: String
     var firstName: String
     var customerId: String
+    var mobileNumber: String
+
 }
 
 class UserManager {
@@ -24,6 +26,8 @@ class UserManager {
                 print("First Name: \(user.firstName)")
                 print("Last Name: \(user.lastName)")
                 print("Customer ID: \(user.customerId)")
+                print("Mobile Number: \(user.mobileNumber)")
+                
             } else {
                 print("currentUser set to nil.")
             }

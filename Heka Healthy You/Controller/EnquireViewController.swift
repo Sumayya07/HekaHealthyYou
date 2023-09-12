@@ -87,6 +87,13 @@ class EnquireViewController: MenuViewController, UITextFieldDelegate {
              let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
              view.addGestureRecognizer(tapGesture)
         
+        if let currentUser = UserManager.shared.currentUser {
+               self.txtFieldName.text = "\(currentUser.firstName) \(currentUser.lastName)"
+               self.txtFieldMobileNumber.text = currentUser.mobileNumber
+           } else {
+               print("No current user found")
+           }
+        
         btnSubmit.isEnabled = false
         btnSubmit.backgroundColor = UIColor.gray
 

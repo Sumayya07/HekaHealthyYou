@@ -524,7 +524,7 @@ extension LoginViewController {
                             if let customer = apiResponse.customer {
                                    
                                    // Create a new user instance with the data from the login response
-                                   let user = User(email: customer.email, lastName: customer.lastName, firstName: customer.firstName, customerId: customer.customerId)
+                                let user = User(email: customer.email, lastName: customer.lastName, firstName: customer.firstName, customerId: customer.customerId, mobileNumber: customer.mobileNumber)
                                    
                                    // Save this user to UserManager
                                    UserManager.shared.currentUser = user
@@ -534,6 +534,7 @@ extension LoginViewController {
                                    print("Last Name: \(customer.lastName)")
                                    print("Email: \(customer.email)")
                                    print("Customer ID: \(customer.customerId)")
+                                   print("Customer ID: \(customer.mobileNumber)")
                                }
 
                             // Handle successful OTP verification, navigate to the next screen or show success message

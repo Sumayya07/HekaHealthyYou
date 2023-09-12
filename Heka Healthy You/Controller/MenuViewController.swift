@@ -118,7 +118,7 @@ class MenuViewController: UIViewController {
     
     
     @IBAction func btnSignupTapped(_ sender: Any) {
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as? SignupViewController {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
