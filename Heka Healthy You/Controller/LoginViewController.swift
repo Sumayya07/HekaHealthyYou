@@ -36,7 +36,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var otp5: UITextField!
     @IBOutlet var otp6: UITextField!
     
-    
     var reachability: Reachability?
     var userId: String?
     var timer: Timer?

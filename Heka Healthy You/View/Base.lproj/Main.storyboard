@@ -23722,10 +23722,6 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="lk3-qo-c3e" id="Inm-CY-mQ7"/>
-                                            <outlet property="delegate" destination="lk3-qo-c3e" id="6tg-AB-R6q"/>
-                                        </connections>
                                     </tableView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="7AO-Br-oTw">
                                         <rect key="frame" x="97" y="27" width="106" height="105"/>
