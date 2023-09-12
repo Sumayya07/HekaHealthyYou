@@ -34,6 +34,8 @@ class SignupViewController: UIViewController {
     
     var userId: String?
     var customerId: String?
+    var mobileNumber: String?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -174,7 +176,7 @@ extension SignupViewController {
             print("Sending User Registration request with data: \(params)")
             
             // Save user data to the singleton once registration is confirmed successful
-            let user = User(email: email, lastName: lastName, firstName: firstName, customerId: self.customerId ?? "", mobileNumber: "")
+            let user = User(email: email, lastName: lastName, firstName: firstName, customerId: self.customerId ?? "", mobileNumber: self.mobileNumber ?? "")
             UserManager.shared.currentUser = user
             
             let dataBody = createDataBody(withParameters: params, boundary: boundary)

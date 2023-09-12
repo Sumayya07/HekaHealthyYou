@@ -44,6 +44,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var totalTime = 60
     var customerId = ""
     var userProfileStatus = ""
+    var mobileNumber: String?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -341,6 +343,8 @@ extension LoginViewController {
         request.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
         let mobileNumber = phoneNoLabel.text ?? ""
+        self.mobileNumber = mobileNumber
+
         print("Sending mobile number to API: \(mobileNumber)")
         let dataBody = createDataBody(withParameters: ["data": "{\"mobileNumber\":\"\(mobileNumber)\"}"], boundary: boundary)
         request.httpBody = dataBody
@@ -555,6 +559,8 @@ extension LoginViewController {
                                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
                                         vc.customerId = self.customerId
                                         print(self.customerId)
+                                        vc.mobileNumber = self.mobileNumber  // Pass the mobile number to SignupViewController
+
                                         self.navigationController?.pushViewController(vc, animated: true)
                                     }
                                 } else {
@@ -573,6 +579,8 @@ extension LoginViewController {
                                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
                                         vc.customerId = self.customerId
                                         print(self.customerId)
+                                        vc.mobileNumber = self.mobileNumber  // Pass the mobile number to SignupViewController
+
                                         self.navigationController?.pushViewController(vc, animated: true)
                                     }
                                 } else {
