@@ -70,8 +70,16 @@ class ElectricalSafetyViewController: MenuViewController, UITextFieldDelegate {
         txtFieldMobileNumber.layer.borderWidth = 1
         txtFieldMobileNumber.layer.borderColor = UIColor.black.cgColor
         namepopup.addTarget(self, action: #selector(validateFields), for: .editingChanged)
-           emailpopup.addTarget(self, action: #selector(validateFields), for: .editingChanged)
-           mobilepopup.addTarget(self, action: #selector(validateFields), for: .editingChanged)
+        emailpopup.addTarget(self, action: #selector(validateFields), for: .editingChanged)
+        mobilepopup.addTarget(self, action: #selector(validateFields), for: .editingChanged)
+        
+        if let currentUser = UserManager.shared.currentUser {
+               self.txtFieldName.text = "\(currentUser.firstName) \(currentUser.lastName)"
+               self.txtFieldMobileNumber.text = currentUser.mobileNumber
+               self.txtFieldEmail.text = currentUser.email
+           } else {
+               print("No current user found")
+           }
         
     }
     

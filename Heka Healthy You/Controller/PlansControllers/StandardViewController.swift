@@ -68,6 +68,14 @@ class StandardViewController: MenuViewController, UITextFieldDelegate {
         txtFieldMobileNumber.layer.borderWidth = 1
         txtFieldMobileNumber.layer.borderColor = UIColor.black.cgColor
         
+        if let currentUser = UserManager.shared.currentUser {
+               self.txtFieldName.text = "\(currentUser.firstName) \(currentUser.lastName)"
+               self.txtFieldMobileNumber.text = currentUser.mobileNumber
+               self.txtFieldEmail.text = currentUser.email
+           } else {
+               print("No current user found")
+           }
+        
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
