@@ -24175,7 +24175,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
         <image name="ContinuumPlan" width="358" height="482"/>
         <image name="ElectricalSafetyImage" width="137" height="131"/>
         <image name="ElectricalSafetyTrain" width="532" height="428"/>
-        <image name="EnrollCareHome" width="428" height="94"/>
+        <image name="EnrollCareHome" width="570.66668701171875" height="124.33333587646484"/>
         <image name="EnrollRecovery" width="428" height="90"/>
         <image name="FAQLogo" width="203" height="132"/>
         <image name="FirstAidImage" width="699" height="423"/>
@@ -24206,8 +24206,8 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
         <image name="Operative" width="398" height="223"/>
         <image name="Physio1" width="167" height="167"/>
         <image name="PhysioExperts" width="428" height="139"/>
-        <image name="PhysioForElders" width="428" height="134"/>
-        <image name="PhysioFrames" width="802" height="560"/>
+        <image name="PhysioForElders" width="570.66668701171875" height="177.66667175292969"/>
+        <image name="PhysioFrames" width="550.66668701171875" height="343.66665649414062"/>
         <image name="Post" width="163" height="137"/>
         <image name="Post2" width="427" height="94"/>
         <image name="PostPlan" width="306" height="764"/>
