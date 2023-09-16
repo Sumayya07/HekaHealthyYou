@@ -175,7 +175,7 @@ class TrainingViewController: MenuViewController {
         }
     
     func adjustScrollViewHeight() {
-            let desiredHeight: CGFloat = 650 // Aapki desired height yahan set kijiye
+            let desiredHeight: CGFloat = 680 // Aapki desired height yahan set kijiye
             
             // Scroll view ki height ko set karein
             scrollView.contentSize = CGSize(width: scrollView.frame.width, height: desiredHeight)
@@ -240,9 +240,14 @@ class TrainingViewController: MenuViewController {
             if btnChoose.isSelected {
                 // Set the heights for all the Choose views to 40
                 setChooseHeights(to: 40)
+                
+                // Show the btnBook when Choose is selected (opened)
+                btnBook.isHidden = false
             } else {
                 // Set the heights for all the Choose views to 0
                 setChooseHeights(to: 0)
+                // Hide the btnBook when Choose is deselected (closed)
+                btnBook.isHidden = true
             }
         
         // Reset the heights for all the intro views to 0 if Choose button is tapped

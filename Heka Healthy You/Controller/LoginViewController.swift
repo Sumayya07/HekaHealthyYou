@@ -115,7 +115,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let currentText = textField.text ?? ""
         let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
 
-        if string.isEmpty { // Backspace was tapped
+        if string.isEmpty && range.length == 1 { // Backspace was tapped
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
                 switch textField {
                 case self.otp2:
@@ -141,22 +141,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
                     switch textField {
                     case self.otp1:
-                        self.otp1.text = string
                         self.otp2.becomeFirstResponder()
                     case self.otp2:
-                        self.otp2.text = string
                         self.otp3.becomeFirstResponder()
                     case self.otp3:
-                        self.otp3.text = string
                         self.otp4.becomeFirstResponder()
                     case self.otp4:
-                        self.otp4.text = string
                         self.otp5.becomeFirstResponder()
                     case self.otp5:
-                        self.otp5.text = string
                         self.otp6.becomeFirstResponder()
                     case self.otp6:
-                        self.otp6.text = string
                         self.otp6.resignFirstResponder() // Hide keyboard if last OTP field is filled
                     default:
                         break
@@ -165,16 +159,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self.updateSubmitButtonColor()
                 }
             }
+
             if textField == phoneNoLabel {
-                        // Limit phone number to 10 digits
-                        let currentText = textField.text ?? ""
-                        let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-                        return newText.count <= 10
-                    }
+                // Limit phone number to 10 digits
+                let currentText = textField.text ?? ""
+                let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+                return newText.count <= 10
+            }
         }
         
         return newText.count <= 1
     }
+
 
     func updateSubmitButtonColor() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [weak self] in
