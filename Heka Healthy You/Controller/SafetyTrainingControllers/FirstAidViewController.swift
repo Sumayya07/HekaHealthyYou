@@ -77,13 +77,35 @@ class FirstAidViewController: MenuViewController, UITextFieldDelegate {
            mobilepopup.addTarget(self, action: #selector(validateFields), for: .editingChanged)
         
         if let currentUser = UserManager.shared.currentUser {
-               self.txtFieldName.text = "\(currentUser.firstName) \(currentUser.lastName)"
-               self.txtFieldMobileNumber.text = currentUser.mobileNumber
-               self.txtFieldEmail.text = currentUser.email
-           } else {
-               print("No current user found")
-           }
+                self.txtFieldName.text = "\(currentUser.firstName) \(currentUser.lastName)"
+                self.txtFieldMobileNumber.text = currentUser.mobileNumber
+                self.txtFieldEmail.text = currentUser.email
+
+                // After prefilling the fields, check if the submit button should be enabled
+                checkAndEnableSubmitButton()
+            } else {
+                print("No current user found")
+            }
         
+    }
+    
+    func checkAndEnableSubmitButton() {
+        if isAllDataPrefilled() {
+            callbackpopup.backgroundColor = UIColor(hexString: "#3F6B68")
+        } else {
+            callbackpopup.backgroundColor = .lightGray  // This could be whatever default color you like
+        }
+    }
+
+    func isAllDataPrefilled() -> Bool {
+        // Check if all data fields are not empty
+        guard let name = txtFieldName.text, !name.isEmpty,
+              let email = txtFieldEmail.text, isValidEmail(email),
+              let mobile = txtFieldMobileNumber.text, mobile.count >= 10 else {
+            return false
+        }
+        
+        return true
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
