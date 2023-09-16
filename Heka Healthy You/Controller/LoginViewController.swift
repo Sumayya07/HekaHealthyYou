@@ -10,7 +10,7 @@ import Reachability
 import MBProgressHUD
 import Toast
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate, CustomTextFieldDelegate {
     
     @IBOutlet var viewBottomTabBar: UIView!
     @IBOutlet var viewMobileNumber: UIView!
@@ -29,12 +29,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var btnSendOtp: UIButton!
     @IBOutlet var btnSubmit: UIButton!
     
-    @IBOutlet var otp1: UITextField!
-    @IBOutlet var otp2: UITextField!
-    @IBOutlet var otp3: UITextField!
-    @IBOutlet var otp4: UITextField!
-    @IBOutlet var otp5: UITextField!
-    @IBOutlet var otp6: UITextField!
+    @IBOutlet var otp1: CustomTextField!
+    @IBOutlet var otp2: CustomTextField!
+    @IBOutlet var otp3: CustomTextField!
+    @IBOutlet var otp4: CustomTextField!
+    @IBOutlet var otp5: CustomTextField!
+    @IBOutlet var otp6: CustomTextField!
     
     var reachability: Reachability?
     var userId: String?
@@ -96,47 +96,52 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         phoneNoLabel.addTarget(self, action: #selector(txtFieldNumberDidChange), for: .editingChanged)
         
-            otp1.delegate = self
-            otp2.delegate = self
-            otp3.delegate = self
-            otp4.delegate = self
-            otp5.delegate = self
-            otp6.delegate = self
+        otp1.deletionDelegate = self
+              otp2.deletionDelegate = self
+              otp3.deletionDelegate = self
+              otp4.deletionDelegate = self
+              otp5.deletionDelegate = self
+              otp6.deletionDelegate = self
+
+              otp1.delegate = self
+              otp2.delegate = self
+              otp3.delegate = self
+              otp4.delegate = self
+              otp5.delegate = self
+              otp6.delegate = self
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         timer?.invalidate()
         timer = nil
     }
-
     
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let currentText = textField.text ?? ""
-        let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-
-        if string.isEmpty && range.length == 1 { // Backspace was tapped
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                switch textField {
-                case self.otp2:
-                    self.otp1.becomeFirstResponder()
-                case self.otp3:
-                    self.otp2.becomeFirstResponder()
-                case self.otp4:
-                    self.otp3.becomeFirstResponder()
-                case self.otp5:
-                    self.otp4.becomeFirstResponder()
-                case self.otp6:
-                    self.otp5.becomeFirstResponder()
-                default:
-                    break
-                }
-                
-                // Update submit button color
-                self.updateSubmitButtonColor()
+    func textFieldDidDeleteBackward(_ textField: CustomTextField) {
+            switch textField {
+            case otp2:
+                otp1.becomeFirstResponder()
+            case otp3:
+                otp2.becomeFirstResponder()
+            case otp4:
+                otp3.becomeFirstResponder()
+            case otp5:
+                otp4.becomeFirstResponder()
+            case otp6:
+                otp5.becomeFirstResponder()
+            default:
+                break
             }
-            return true
-        } else {
+
+            updateSubmitButtonColor()
+        }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+            let currentText = textField.text ?? ""
+            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+
+            if textField == phoneNoLabel {
+                return newText.count <= 10
+            }
+
             if newText.count == 1 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
                     switch textField {
@@ -151,27 +156,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     case self.otp5:
                         self.otp6.becomeFirstResponder()
                     case self.otp6:
-                        self.otp6.resignFirstResponder() // Hide keyboard if last OTP field is filled
+                        self.otp6.resignFirstResponder()
                     default:
                         break
                     }
-                    // Update submit button color
                     self.updateSubmitButtonColor()
                 }
             }
-
-            if textField == phoneNoLabel {
-                // Limit phone number to 10 digits
-                let currentText = textField.text ?? ""
-                let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-                return newText.count <= 10
-            }
+            return newText.count <= 1
         }
-        
-        return newText.count <= 1
-    }
-
-
+    
     func updateSubmitButtonColor() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [weak self] in
             if self?.areAllOTPFieldsFilled() == true {
