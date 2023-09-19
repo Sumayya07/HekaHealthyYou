@@ -92,6 +92,9 @@ class HomeViewController: MenuViewController {
             } else if indexPath.item == 3 {
                 let vc = storyboard?.instantiateViewController(withIdentifier: "OperativeViewController") as! OperativeViewController
                 self.navigationController?.pushViewController(vc, animated: true)
+            } else if indexPath.item == 4 {
+                let vc = storyboard?.instantiateViewController(withIdentifier: "DoctorConsultViewController") as! DoctorConsultViewController
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             
         }

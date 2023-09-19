@@ -9,6 +9,7 @@ import UIKit
 import Reachability
 import MBProgressHUD
 
+// CHECK THIS SIGNUP VIEW CONTROLLER API
 
 class SignupViewController: UIViewController {
     

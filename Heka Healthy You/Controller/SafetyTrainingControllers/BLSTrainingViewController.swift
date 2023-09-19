@@ -30,9 +30,29 @@ class BLSTrainingViewController: MenuViewController, UITextFieldDelegate {
     @IBOutlet var viewScheduleCall: UIView!
     @IBOutlet var viewScheduleCallPopup: UIView!
     
+    @IBOutlet var starone: UIButton!
+    
+    @IBOutlet var startwo: UIButton!
+    
+    @IBOutlet var startthree: UIButton!
+    
+    @IBOutlet var startfour: UIButton!
+    
+    @IBOutlet var startfive: UIButton!
+    var starButtons: [UIButton] = []
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        starButtons = [starone, startwo, startthree, startfour, startfive]
+        starone.tintColor = UIColor.systemYellow
+        startwo.tintColor = UIColor.systemYellow
+        startthree.tintColor = UIColor.systemYellow
+        startfour.tintColor = UIColor.systemYellow
+        startfive.tintColor = UIColor.systemYellow
+        
         txtFieldMobileNumber.delegate = self
         btnSOS.layer.cornerRadius = 24
         btnSOS.layer.borderWidth = 2
@@ -165,5 +185,39 @@ class BLSTrainingViewController: MenuViewController, UITextFieldDelegate {
         navigationController?.popViewController(animated: true)
 
     }
+    
+    
+    
+    
+    @IBAction func star1(_ sender: Any) {
+        updateStars(rating: 1)
+    }
+    
+    
+    @IBAction func star2(_ sender: Any) {
+        updateStars(rating: 2)
+    }
+    
+    @IBAction func star3(_ sender: Any) {
+        updateStars(rating: 3)
+    }
+    
+    @IBAction func star4(_ sender: Any) {
+        updateStars(rating: 4)
+    }
+    
+    @IBAction func star5(_ sender: Any) {
+        updateStars(rating: 5)
+    }
+    
+    func updateStars(rating: Int) {
+          for (index, button) in starButtons.enumerated() {
+              let imageName = (index < rating) ? "star.fill" : "star"
+              let image = UIImage(systemName: imageName)
+              button.setImage(image, for: .normal)
+          }
+      }
+      
+    
     
 }

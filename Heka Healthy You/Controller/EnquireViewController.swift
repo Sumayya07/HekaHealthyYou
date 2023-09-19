@@ -12,10 +12,6 @@ import AppTrackingTransparency
 import AVKit
 import Accelerate
 
-// NUMBER LIMIT 10 INSIDE TEXTFIELD AND REMOVE POPUP MESSAGE AND NUMPAD OPEN ALWAYS
-// NAME LIMIT 3
-// ALL IMAGES NEED TO BE 4X
-
 class EnquireViewController: MenuViewController, UITextFieldDelegate {
     
     @IBOutlet var btnSOS: UIButton!

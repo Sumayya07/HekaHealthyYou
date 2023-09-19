@@ -6,13 +6,6 @@
 //
 
 
-// All images all icons 4x
-// OTP REMOVE WORKING CORRECTLY NOT WORKING IN CASE IF THERE IS NOTHING IN BOX
-// SIGNUP AND LOGIN TAKES ONLY TO LOGIN
-// EMAIL AND PHONE NUMBER SAVE IN LOCAL STORAGE
-// ENROL NOW AND ENQUIRE NOW VALUES TO BE PRE FILLED WHEN USER IS LOGGED IN
-//  FONT SIZE INCREASE OR DECREASE SHOULD NOT EFFECT THE APP
-
 import UIKit
 
 class TrainingViewController: MenuViewController {
@@ -76,12 +69,25 @@ class TrainingViewController: MenuViewController {
     @IBOutlet var scrollView: UIScrollView!
     
     
+    @IBOutlet var starone: UIButton!
+    
+    @IBOutlet var startwo: UIButton!
+    
+    @IBOutlet var startthree: UIButton!
+    
+    @IBOutlet var startfour: UIButton!
+    
+    @IBOutlet var startfive: UIButton!
+    
     var safetyImages: [String] = ["SafetyAtWork", "SettingUpRight", "OurCourse"]
     var serviceImages: [String] = ["FirstAid", "RoadSafety", "BLS", "ElectricalSafety"]
     var serviceNames: [String] = ["FirstAid", "RoadSafety", "BLS", "ElectricalSafety"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+
         
         adjustScrollViewHeight()
         
@@ -198,6 +204,36 @@ class TrainingViewController: MenuViewController {
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
+    
+    
+    @IBAction func star1(_ sender: Any) {
+        let newImage = UIImage(systemName: "star.fill")
+        (sender as AnyObject).setImage(newImage, for: .normal)
+    }
+    
+    
+    @IBAction func star2(_ sender: Any) {
+        let newImage = UIImage(systemName: "star.fill")
+        (sender as AnyObject).setImage(newImage, for: .normal)
+    }
+    
+    @IBAction func star3(_ sender: Any) {
+        let newImage = UIImage(systemName: "star.fill")
+        (sender as AnyObject).setImage(newImage, for: .normal)
+    }
+    
+    @IBAction func star4(_ sender: Any) {
+        let newImage = UIImage(systemName: "star.fill")
+        (sender as AnyObject).setImage(newImage, for: .normal)
+    }
+    
+    @IBAction func star5(_ sender: Any) {
+        let newImage = UIImage(systemName: "star.fill")
+        (sender as AnyObject).setImage(newImage, for: .normal)
+    }
+    
+    
     
     
     
