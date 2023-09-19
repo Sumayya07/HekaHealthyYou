@@ -530,59 +530,67 @@ extension LoginViewController {
                                    print("Customer ID: \(customer.mobileNumber)")
                                }
 
-                            // Handle successful OTP verification, navigate to the next screen or show success message
-                            
-                            self.loginsuccessfulview.isHidden = false
-                            
-                            // Hide the pop-up after 3 seconds
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                                self.loginsuccessfulview.isHidden = true
-                            }
-                            self.view.makeToast("OTP Verification Successful", duration: 3.0, position: .bottom)
+//                            // Handle successful OTP verification, navigate to the next screen or show success message
+//                            
+//                            self.loginsuccessfulview.isHidden = false
+//                            
+//                            // Hide the pop-up after 3 seconds
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+//                                self.loginsuccessfulview.isHidden = true
+//                            }
+//                            self.view.makeToast("OTP Verification Successful", duration: 3.0, position: .bottom)
+//                            
+//                            // Check the userProfileStatus to determine next action
+//                            switch apiResponse.userProfileStatus {
+//                            case .int(let intValue):
+//                                if intValue == 201 {
+//                                    // Navigate to Signup View
+//                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+//                                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+//                                        vc.customerId = self.customerId
+//                                        print(self.customerId)
+//                                        vc.mobileNumber = self.mobileNumber  // Pass the mobile number to SignupViewController
+//
+//                                        self.navigationController?.pushViewController(vc, animated: true)
+//                                    }
+//                                } else {
+//                                    // Handle other userProfileStatus cases here...
+//                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+//                                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+//                                        vc.customerId = self.customerId
+//                                        print(self.customerId)
+//                                        self.navigationController?.pushViewController(vc, animated: true)
+//                                    }
+//                                }
+//                            case .string(let stringValue):
+//                                if stringValue == "201" {
+//                                    // Navigate to Signup View
+//                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+//                                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+//                                        vc.customerId = self.customerId
+//                                        print(self.customerId)
+//                                        vc.mobileNumber = self.mobileNumber  // Pass the mobile number to SignupViewController
+//
+//                                        self.navigationController?.pushViewController(vc, animated: true)
+//                                    }
+//                                } else {
+//                                    // Handle other userProfileStatus cases here...
+//                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+//                                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+//                                        vc.customerId = self.customerId
+//                                        print(self.customerId)
+//                                        self.navigationController?.pushViewController(vc, animated: true)
+//                                    }
+//                                }
+//                            }
                             
                             // Check the userProfileStatus to determine next action
-                            switch apiResponse.userProfileStatus {
-                            case .int(let intValue):
-                                if intValue == 201 {
-                                    // Navigate to Signup View
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
-                                        vc.customerId = self.customerId
-                                        print(self.customerId)
-                                        vc.mobileNumber = self.mobileNumber  // Pass the mobile number to SignupViewController
-
-                                        self.navigationController?.pushViewController(vc, animated: true)
-                                    }
-                                } else {
-                                    // Handle other userProfileStatus cases here...
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                                        vc.customerId = self.customerId
-                                        print(self.customerId)
-                                        self.navigationController?.pushViewController(vc, animated: true)
-                                    }
+                                switch apiResponse.userProfileStatus {
+                                case .int(let intValue):
+                                    self.handleUserProfileStatus(value: "\(intValue)")
+                                case .string(let stringValue):
+                                    self.handleUserProfileStatus(value: stringValue)
                                 }
-                            case .string(let stringValue):
-                                if stringValue == "201" {
-                                    // Navigate to Signup View
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
-                                        vc.customerId = self.customerId
-                                        print(self.customerId)
-                                        vc.mobileNumber = self.mobileNumber  // Pass the mobile number to SignupViewController
-
-                                        self.navigationController?.pushViewController(vc, animated: true)
-                                    }
-                                } else {
-                                    // Handle other userProfileStatus cases here...
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                                        vc.customerId = self.customerId
-                                        print(self.customerId)
-                                        self.navigationController?.pushViewController(vc, animated: true)
-                                    }
-                                }
-                            }
                             
                         } else {
                             // Handle failed OTP verification
@@ -604,6 +612,32 @@ extension LoginViewController {
             }
         }
         dataTask.resume()
+    }
+    
+    func handleUserProfileStatus(value: String) {
+        if value == "201" {
+            // Navigate to Signup View
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+                vc.customerId = self.customerId
+                print(self.customerId)
+                vc.mobileNumber = self.mobileNumber  // Pass the mobile number to SignupViewController
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        } else {
+            self.loginsuccessfulview.isHidden = false
+            self.view.makeToast("OTP Verification Successful", duration: 3.0, position: .bottom)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                self.loginsuccessfulview.isHidden = true
+                
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                vc.customerId = self.customerId
+                print(self.customerId)
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
 
 }

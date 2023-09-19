@@ -54,6 +54,8 @@ class SignupViewController: UIViewController {
         txtFieldEmail.addTarget(self, action: #selector(emailTextFieldDidChange), for: .editingChanged)
         
         viewSigninSuccessful.isHidden = true
+        viewSigninSuccessful.layer.cornerRadius = 12
+
         
     
 
@@ -211,17 +213,20 @@ extension SignupViewController {
                         }
                     } catch {
                         DispatchQueue.main.async {
-                            
                                 MBProgressHUD.hide(for: self.view, animated: true)
 
+                                // Assuming viewSigninSuccessful is a UIView in your SignupViewController
+                                self.viewSigninSuccessful.isHidden = false
                                 self.view.makeToast("User Registered Successfully", duration: 3.0, position: .bottom)
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                                vc.customerId = self.customerId
-                                self.navigationController?.pushViewController(vc, animated: true)
+
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                                    self.viewSigninSuccessful.isHidden = true
+
+                                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                                    vc.customerId = self.customerId
+                                    self.navigationController?.pushViewController(vc, animated: true)
+                                }
                             }
-                            
-                        }
                     }
                 } else {
                     DispatchQueue.main.async {
