@@ -158,7 +158,7 @@ class DoctorConsultViewController: MenuViewController {
         }
     
     func adjustScrollViewHeight() {
-            let desiredHeight: CGFloat = 650 // Aapki desired height yahan set kijiye
+            let desiredHeight: CGFloat = 680 // Aapki desired height yahan set kijiye
             
             // Scroll view ki height ko set karein
             scrollView.contentSize = CGSize(width: scrollView.frame.width, height: desiredHeight)
@@ -252,17 +252,20 @@ class DoctorConsultViewController: MenuViewController {
     func toggleButtonState(button: UIButton, constraint: NSLayoutConstraint) {
             button.isSelected = !button.isSelected
 
-            if button.isSelected {
+        if button.isSelected {
                 // Button is selected, expand it
                 if constraint === ServiceOpeningClosingConstraint {
                     constraint.constant = 100
                     button.backgroundColor = UIColor(named: "Turquoise")
                     button.layer.borderColor = UIColor(named: "Turquoise")?.cgColor
-                } else {
+                } else if constraint === ChooseOpeningClosingConstraint {
+                    constraint.constant = 149
+                    button.backgroundColor = UIColor(named: "Turquoise")
+                    button.layer.borderColor = UIColor(named: "Turquoise")?.cgColor
+                } else if constraint === IntroOpeningClosingConstraint {
                     constraint.constant = 187
                     button.backgroundColor = UIColor(named: "Turquoise")
                     button.layer.borderColor = UIColor(named: "Turquoise")?.cgColor
-                    
                 }
             } else {
                 // Button is not selected, collapse it
