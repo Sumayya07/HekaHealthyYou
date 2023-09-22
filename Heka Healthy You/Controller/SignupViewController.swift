@@ -164,6 +164,7 @@ extension SignupViewController {
         request.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
         var registrationData: [String: String] = [
+            
             "firstName": firstName,
             "lastName": lastName,
             "email": email

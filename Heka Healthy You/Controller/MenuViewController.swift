@@ -25,11 +25,9 @@ class MenuViewController: UIViewController {
     @IBOutlet var btnLogin: UIButton!
     @IBOutlet var btnSignup: UIButton!
     
+    let lblMenu = ["About Us","FAQ","Help & Support","Like Us ? Rate Us ","Terms of Use","Log Out"]
     
-    
-    let lblMenu = ["About Us","Our Services","Download Certificate","My Coupons","Payments","My Medical Records","Change Language","Settings","Help & Support","Order History","Like Us ? Rate Us ","Legal","Log Out","FAQ","","",""]
-    
-    let imgMenu = ["About","Services","Certificate","Coupons","Payments","Records","Language","Settings","Help","History","Rate","Legal","Logout","FAQ","","",""]
+    let imgMenu = ["About","FAQ","Help","Rate","Legal","Records","Language","Settings","Help","Rate","Logout","FAQ","","",""]
     
     var currentMenuOptions: [String] {
         if UserManager.shared.currentUser == nil {
@@ -92,12 +90,22 @@ class MenuViewController: UIViewController {
             
             btnLogin?.isHidden = true
             btnSignup?.isHidden = true
+            // Adjust viewMenu height for logged in user
+            viewMenu.frame.size.height = 430
+            tableView.frame.size.height = 200
+
+
         } else {
             lblUserFullName?.text = ""
             print("No current user found.")
             
             btnLogin?.isHidden = false
             btnSignup?.isHidden = false
+            
+            // Adjust viewMenu height for user not logged in
+            viewMenu.frame.size.height = 410
+            tableView.frame.size.height = 180
+
         }
         
         // Reload the tableView to adjust for menu options based on user's login status
