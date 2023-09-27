@@ -8,5 +8,6 @@
 import UIKit
 
 class PharmacySafetyCVC: UICollectionViewCell {
-    
+    @IBOutlet var imgSafetyTraining: UIImageView!
+
 }

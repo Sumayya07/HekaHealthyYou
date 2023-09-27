@@ -8,5 +8,7 @@
 import UIKit
 
 class MedicalServiceCVC: UICollectionViewCell {
-    
+    @IBOutlet var imgServiceInformation: UIImageView!
+       
+       @IBOutlet var lblServiceNames: UILabel!
 }

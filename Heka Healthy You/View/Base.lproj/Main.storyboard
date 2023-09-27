@@ -25534,7 +25534,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                                                     <constraint firstAttribute="height" constant="40" id="oGn-gw-per"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single platform for all your healthcare needs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joK-F0-2pS">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seamless virtual consultation across multiple specialists" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joK-F0-2pS">
                                                                                 <rect key="frame" x="44" y="0.0" width="300" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="40" id="rKl-94-hgN"/>
@@ -25564,7 +25564,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                                                     <constraint firstAttribute="height" constant="40" id="6rg-zb-mNr"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NABL certified diagnostics partners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fT-7a-pC0">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hassle-free scheduling &amp; better patient management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fT-7a-pC0">
                                                                                 <rect key="frame" x="44" y="0.0" width="300" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="40" id="AG5-WV-vEr"/>
@@ -25594,7 +25594,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                                                     <constraint firstAttribute="height" constant="40" id="6cb-Dv-a6N"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trained phlebotomists, assured quality service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUe-Ym-dyf">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Integrated diagnostics &amp; Pharmacy on single platform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUe-Ym-dyf">
                                                                                 <rect key="frame" x="44" y="0.0" width="300" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="40" id="fWX-QW-6vt"/>
@@ -25784,7 +25784,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                                                     <constraint firstAttribute="height" constant="40" id="zDd-ct-nMR"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital prescription &amp; EHR available" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phU-Rw-d8Q">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Least chance of acquiring infections" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phU-Rw-d8Q">
                                                                                 <rect key="frame" x="44" y="0.0" width="300" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="40" id="avq-mt-YOF"/>
@@ -26779,7 +26779,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DoctorSafetyCVC" id="ADd-Tg-icX" customClass="DoctorSafetyCVC" customModule="Heka_Healthy_You" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PharmacySafetyCVC" id="ADd-Tg-icX" customClass="PharmacySafetyCVC" customModule="Heka_Healthy_You" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="93"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b9j-jv-YQU">
@@ -26838,7 +26838,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                         </collectionViewFlowLayout>
                                                                         <cells>
-                                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DoctorServiceCVC" id="uvN-VF-Zqv" customClass="DoctorServiceCVC" customModule="Heka_Healthy_You" customModuleProvider="target">
+                                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PharmacyServiceCVC" id="uvN-VF-Zqv" customClass="PharmacyServiceCVC" customModule="Heka_Healthy_You" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="10.666666666666666" width="110" height="110"/>
                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lDg-4j-1mg">
@@ -27679,7 +27679,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DoctorSafetyCVC" id="kXs-EA-aZV" customClass="DoctorSafetyCVC" customModule="Heka_Healthy_You" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MedicalSafetyCVC" id="kXs-EA-aZV" customClass="MedicalSafetyCVC" customModule="Heka_Healthy_You" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="93"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YgY-wS-1TL">
@@ -27738,7 +27738,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                         </collectionViewFlowLayout>
                                                                         <cells>
-                                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DoctorServiceCVC" id="xNV-t5-YoR" customClass="DoctorServiceCVC" customModule="Heka_Healthy_You" customModuleProvider="target">
+                                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MedicalServiceCVC" id="xNV-t5-YoR" customClass="MedicalServiceCVC" customModule="Heka_Healthy_You" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="10.666666666666666" width="110" height="110"/>
                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BEd-iA-tcC">
