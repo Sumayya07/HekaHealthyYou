@@ -203,17 +203,6 @@ extension SignupViewController {
                             MBProgressHUD.hide(for: self.view, animated: true)
                             
                             if apiResponse.code == 200 {
-                                self.SimpleAlert(withTitle: "Success", message: apiResponse.message ?? "")
-                                
-                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
-                                
-                                self.navigationController?.pushViewController(vc, animated: true)
-                            } else {
-                                self.SimpleAlert(withTitle: "Error", message: apiResponse.message ?? "")
-                            }
-                        }
-                    } catch {
-                        DispatchQueue.main.async {
                                 MBProgressHUD.hide(for: self.view, animated: true)
 
                                 // Assuming viewSigninSuccessful is a UIView in your SignupViewController
@@ -228,6 +217,13 @@ extension SignupViewController {
                                     self.navigationController?.pushViewController(vc, animated: true)
                                 }
                             }
+                        }
+                    } catch {
+                        // If that fails, handle it as an unknown error or a non-JSON response
+                               DispatchQueue.main.async {
+                                   MBProgressHUD.hide(for: self.view, animated: true)
+                                   self.SimpleAlert(withTitle: "Error", message: "Something went wrong")
+                               }
                     }
                 } else {
                     DispatchQueue.main.async {

@@ -97,6 +97,21 @@ class HomeViewController: MenuViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
+            else if indexPath.item == 5 {
+                let vc = storyboard?.instantiateViewController(withIdentifier: "LabVC") as! LabVC
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+            else if indexPath.item == 6 {
+                let vc = storyboard?.instantiateViewController(withIdentifier: "PharmacyVC") as! PharmacyVC
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+            else if indexPath.item == 7 {
+                let vc = storyboard?.instantiateViewController(withIdentifier: "MedicalAstrologyVC") as! MedicalAstrologyVC
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
         }
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

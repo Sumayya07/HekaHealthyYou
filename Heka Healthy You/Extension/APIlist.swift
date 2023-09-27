@@ -12,7 +12,7 @@ class APIManager {
     
     let loginURL = "https://zylicontechnologies.com/hekaAPI/userAPI/customer/login.php"
     let verifyOTPURL = "https://zylicontechnologies.com/hekaAPI/userAPI/customer/verifyOtp.php"
-    let registrationURL = "https://zylicontechnologies.com/hekaAPI/userAPI/registration.php"
+    let registrationURL = "https://zylicontechnologies.com/hekaAPI/userAPI/customer/registration.php"
     let fetchCustomerDataURL = "https://zylicontechnologies.com/hekaAPI/userAPI/customer/fetchCustomer.php"
 
 }

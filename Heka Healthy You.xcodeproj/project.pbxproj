@@ -15,6 +15,9 @@
 		C038FE402A938165003CBB68 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038FE3F2A938165003CBB68 /* SignupModel.swift */; };
 		C038FE422A9386F0003CBB68 /* Verifyotpmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038FE412A9386F0003CBB68 /* Verifyotpmodel.swift */; };
 		C038FE442A938C9A003CBB68 /* FetchCustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038FE432A938C9A003CBB68 /* FetchCustomerModel.swift */; };
+		C06546442AC2FB9500F7BFD4 /* LabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06546432AC2FB9500F7BFD4 /* LabVC.swift */; };
+		C06546462AC2FBD800F7BFD4 /* PharmacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06546452AC2FBD800F7BFD4 /* PharmacyVC.swift */; };
+		C06546482AC2FBEB00F7BFD4 /* MedicalAstrologyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06546472AC2FBEB00F7BFD4 /* MedicalAstrologyVC.swift */; };
 		C0A3C4712A656FB80068D69A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3C4702A656FB80068D69A /* UIColor.swift */; };
 		C0B643D32A8986580078BD0E /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = C0B643D22A8986580078BD0E /* Toast */; };
 		C0BF37C92A3844B80058C4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BF37C82A3844B80058C4DB /* AppDelegate.swift */; };
@@ -85,6 +88,12 @@
 		CAAAEBCE2A7A62D8005D85B4 /* LookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAEBCD2A7A62D8005D85B4 /* LookingTableViewCell.swift */; };
 		CAACF9152A71421F002D0182 /* FirstAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAACF9142A71421F002D0182 /* FirstAidViewController.swift */; };
 		CAACF9172A718B51002D0182 /* RoadSafetyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAACF9162A718B51002D0182 /* RoadSafetyViewController.swift */; };
+		CAB0BADD2AC40CD500EB3A8E /* LabTestSafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0BADC2AC40CD500EB3A8E /* LabTestSafetyCVC.swift */; };
+		CAB0BADF2AC40CE700EB3A8E /* LabTestServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0BADE2AC40CE700EB3A8E /* LabTestServiceCVC.swift */; };
+		CAB0BAE12AC4127400EB3A8E /* PharmacySafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0BAE02AC4127400EB3A8E /* PharmacySafetyCVC.swift */; };
+		CAB0BAE32AC412E000EB3A8E /* PharmacyServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0BAE22AC412E000EB3A8E /* PharmacyServiceCVC.swift */; };
+		CAB0BAE72AC422B500EB3A8E /* MedicalSafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0BAE62AC422B500EB3A8E /* MedicalSafetyCVC.swift */; };
+		CAB0BAE92AC422CA00EB3A8E /* MedicalServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0BAE82AC422CA00EB3A8E /* MedicalServiceCVC.swift */; };
 		CAC574C32AB998B400ABC428 /* DoctorConsultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC574C22AB998B400ABC428 /* DoctorConsultViewController.swift */; };
 		CAC574C52AB999CF00ABC428 /* DoctorSafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC574C42AB999CF00ABC428 /* DoctorSafetyCVC.swift */; };
 		CAC574C72AB999E200ABC428 /* DoctorServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC574C62AB999E200ABC428 /* DoctorServiceCVC.swift */; };
@@ -110,6 +119,9 @@
 		C038FE3F2A938165003CBB68 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		C038FE412A9386F0003CBB68 /* Verifyotpmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verifyotpmodel.swift; sourceTree = "<group>"; };
 		C038FE432A938C9A003CBB68 /* FetchCustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCustomerModel.swift; sourceTree = "<group>"; };
+		C06546432AC2FB9500F7BFD4 /* LabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabVC.swift; sourceTree = "<group>"; };
+		C06546452AC2FBD800F7BFD4 /* PharmacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyVC.swift; sourceTree = "<group>"; };
+		C06546472AC2FBEB00F7BFD4 /* MedicalAstrologyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalAstrologyVC.swift; sourceTree = "<group>"; };
 		C0A3C4702A656FB80068D69A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		C0BF37C52A3844B80058C4DB /* Heka Healthy You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heka Healthy You.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BF37C82A3844B80058C4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +192,12 @@
 		CAAAEBCD2A7A62D8005D85B4 /* LookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingTableViewCell.swift; sourceTree = "<group>"; };
 		CAACF9142A71421F002D0182 /* FirstAidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidViewController.swift; sourceTree = "<group>"; };
 		CAACF9162A718B51002D0182 /* RoadSafetyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSafetyViewController.swift; sourceTree = "<group>"; };
+		CAB0BADC2AC40CD500EB3A8E /* LabTestSafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTestSafetyCVC.swift; sourceTree = "<group>"; };
+		CAB0BADE2AC40CE700EB3A8E /* LabTestServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTestServiceCVC.swift; sourceTree = "<group>"; };
+		CAB0BAE02AC4127400EB3A8E /* PharmacySafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacySafetyCVC.swift; sourceTree = "<group>"; };
+		CAB0BAE22AC412E000EB3A8E /* PharmacyServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyServiceCVC.swift; sourceTree = "<group>"; };
+		CAB0BAE62AC422B500EB3A8E /* MedicalSafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSafetyCVC.swift; sourceTree = "<group>"; };
+		CAB0BAE82AC422CA00EB3A8E /* MedicalServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalServiceCVC.swift; sourceTree = "<group>"; };
 		CAC574C22AB998B400ABC428 /* DoctorConsultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorConsultViewController.swift; sourceTree = "<group>"; };
 		CAC574C42AB999CF00ABC428 /* DoctorSafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSafetyCVC.swift; sourceTree = "<group>"; };
 		CAC574C62AB999E200ABC428 /* DoctorServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorServiceCVC.swift; sourceTree = "<group>"; };
@@ -237,6 +255,30 @@
 				C038FE432A938C9A003CBB68 /* FetchCustomerModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C06546402AC2F9D600F7BFD4 /* LabTestViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C06546432AC2FB9500F7BFD4 /* LabVC.swift */,
+			);
+			path = LabTestViewControllers;
+			sourceTree = "<group>";
+		};
+		C06546412AC2F9E300F7BFD4 /* PharmacyHomeViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C06546452AC2FBD800F7BFD4 /* PharmacyVC.swift */,
+			);
+			path = PharmacyHomeViewControllers;
+			sourceTree = "<group>";
+		};
+		C06546422AC2FA6400F7BFD4 /* MedicalAstroglogyViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C06546472AC2FBEB00F7BFD4 /* MedicalAstrologyVC.swift */,
+			);
+			path = MedicalAstroglogyViewControllers;
 			sourceTree = "<group>";
 		};
 		C0BF37BC2A3844B80058C4DB = {
@@ -324,6 +366,12 @@
 				CA685A862A8CD2BA009EDF2C /* OperativeSafetyCVC.swift */,
 				CAC574C42AB999CF00ABC428 /* DoctorSafetyCVC.swift */,
 				CAC574C62AB999E200ABC428 /* DoctorServiceCVC.swift */,
+				CAB0BADC2AC40CD500EB3A8E /* LabTestSafetyCVC.swift */,
+				CAB0BADE2AC40CE700EB3A8E /* LabTestServiceCVC.swift */,
+				CAB0BAE02AC4127400EB3A8E /* PharmacySafetyCVC.swift */,
+				CAB0BAE22AC412E000EB3A8E /* PharmacyServiceCVC.swift */,
+				CAB0BAE62AC422B500EB3A8E /* MedicalSafetyCVC.swift */,
+				CAB0BAE82AC422CA00EB3A8E /* MedicalServiceCVC.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -387,6 +435,9 @@
 		CA78BEE82A42D0EF00739640 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C06546422AC2FA6400F7BFD4 /* MedicalAstroglogyViewControllers */,
+				C06546412AC2F9E300F7BFD4 /* PharmacyHomeViewControllers */,
+				C06546402AC2F9D600F7BFD4 /* LabTestViewControllers */,
 				CAC574C12AB9988300ABC428 /* DoctorConsultationControllers */,
 				CA685A812A8CD1C7009EDF2C /* OperativeCareControllers */,
 				CAFCA53F2A828DF600E503DB /* PlansControllers */,
@@ -594,8 +645,11 @@
 				CA0656302A5FC70500C8A1B5 /* MedicalAstrologyTableViewCell.swift in Sources */,
 				CAACF9152A71421F002D0182 /* FirstAidViewController.swift in Sources */,
 				CA787EC12A605EFB00CAE942 /* SignupViewController.swift in Sources */,
+				CAB0BADF2AC40CE700EB3A8E /* LabTestServiceCVC.swift in Sources */,
+				C06546482AC2FBEB00F7BFD4 /* MedicalAstrologyVC.swift in Sources */,
 				CA685A8D2A8CD686009EDF2C /* CardiacViewController.swift in Sources */,
 				CA129EE12A5D54F000A5282D /* OverseasServiceTableViewCell.swift in Sources */,
+				C06546442AC2FB9500F7BFD4 /* LabVC.swift in Sources */,
 				CA129ECC2A5D27CE00A5282D /* DoctorConsultationViewController.swift in Sources */,
 				C0BF37CD2A3844B80058C4DB /* HomeViewController.swift in Sources */,
 				CA685A8F2A8CD691009EDF2C /* WoundViewController.swift in Sources */,
@@ -617,6 +671,7 @@
 				CA685A852A8CD29F009EDF2C /* OperativeServiceCVC.swift in Sources */,
 				CA129ECA2A5D27B800A5282D /* OperativeCareViewController.swift in Sources */,
 				C0BF37C92A3844B80058C4DB /* AppDelegate.swift in Sources */,
+				C06546462AC2FBD800F7BFD4 /* PharmacyVC.swift in Sources */,
 				CA07BD0A2A46CDA00014AE34 /* SafetyTrainingCVC.swift in Sources */,
 				CA129ED02A5D27E600A5282D /* PharmacyViewController.swift in Sources */,
 				CA146AE62A718FE500FFFA52 /* BLSTrainingViewController.swift in Sources */,
@@ -626,6 +681,7 @@
 				CADB51412A55DC0A0069996A /* MenuViewController.swift in Sources */,
 				CA3BD7C02A79831600B96D6D /* ElderlyCareServiceCVC.swift in Sources */,
 				CA9C9B562A573D8000781325 /* FAQTableViewCell.swift in Sources */,
+				CAB0BAE32AC412E000EB3A8E /* PharmacyServiceCVC.swift in Sources */,
 				CA146AE82A71902F00FFFA52 /* ElectricalSafetyViewController.swift in Sources */,
 				C038FE422A9386F0003CBB68 /* Verifyotpmodel.swift in Sources */,
 				CAACF9172A718B51002D0182 /* RoadSafetyViewController.swift in Sources */,
@@ -649,18 +705,22 @@
 				CA685A872A8CD2BA009EDF2C /* OperativeSafetyCVC.swift in Sources */,
 				CA7347682A7CC07000F44962 /* PrenatalCareViewController.swift in Sources */,
 				CA685A892A8CD673009EDF2C /* InjuryViewController.swift in Sources */,
+				CAB0BAE92AC422CA00EB3A8E /* MedicalServiceCVC.swift in Sources */,
 				CA129EC62A5D256000A5282D /* FAQElderlyCareViewController.swift in Sources */,
 				CA3BD7C22A79833900B96D6D /* ElderlyCareSafetyCVC.swift in Sources */,
 				CA78BEE62A42CAD400739640 /* HomeCVC.swift in Sources */,
+				CAB0BADD2AC40CD500EB3A8E /* LabTestSafetyCVC.swift in Sources */,
 				CAAAEBCE2A7A62D8005D85B4 /* LookingTableViewCell.swift in Sources */,
 				C00E3FC02A894F4D00399968 /* APIlist.swift in Sources */,
 				CA129ED42A5D280E00A5282D /* OverseasServiceViewController.swift in Sources */,
+				CAB0BAE12AC4127400EB3A8E /* PharmacySafetyCVC.swift in Sources */,
 				CAFCA5412A828E1000E503DB /* BasicViewController.swift in Sources */,
 				CA8E55982A7A773D00D8D1C0 /* ReferredTableViewCell.swift in Sources */,
 				CA7347702A7CC32E00F44962 /* PregnancySafetyCVC.swift in Sources */,
 				CAAA06DB2A94F705006DBAF7 /* userData.swift in Sources */,
 				CA129ED82A5D283F00A5282D /* ElderlyCareTableViewCell.swift in Sources */,
 				CAD27E732A73D6AD00C8AB5C /* EnquireViewController.swift in Sources */,
+				CAB0BAE72AC422B500EB3A8E /* MedicalSafetyCVC.swift in Sources */,
 				CA129ED22A5D27FB00A5282D /* MedicalAstrologyViewController.swift in Sources */,
 				CAD42BD82AB58E1500C925BB /* CustomTextField.swift in Sources */,
 			);
