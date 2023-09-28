@@ -66,9 +66,9 @@ class MedicalAstrologyVC: MenuViewController {
     @IBOutlet var scrollView: UIScrollView!
     
     
-    var safetyImages: [String] = ["HowItWorks"]
-    var serviceImages: [String] = ["OnlineConsultation", "Covid-19Care", "EmployeeManagement", "AnnualHealthCheckup"]
-    var serviceNames: [String] = ["Online Consultation", "Covid-19 Care", "Employee Management", "Annual Health Checkup"]
+    var safetyImages: [String] = ["Astrology"]
+    var serviceImages: [String] = ["Premium", "Optima"]
+    var serviceNames: [String] = ["Premium Care", "Optima Care"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -330,11 +330,11 @@ extension MedicalAstrologyVC: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == safetyCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DoctorSafetyCVC", for: indexPath) as! DoctorSafetyCVC
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MedicalSafetyCVC", for: indexPath) as! MedicalSafetyCVC
             cell.imgSafetyTraining.image =  UIImage(named: safetyImages[indexPath.row])
             return cell
         } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DoctorServiceCVC", for: indexPath) as! DoctorServiceCVC
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MedicalServiceCVC", for: indexPath) as! MedicalServiceCVC
             cell.imgServiceInformation.image =  UIImage(named: serviceImages[indexPath.row])
             cell.lblServiceNames.text = serviceNames[indexPath.row]
 
@@ -343,25 +343,21 @@ extension MedicalAstrologyVC: UICollectionViewDelegate, UICollectionViewDataSour
         
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        if collectionView == serviceCollectionView {
-//            if indexPath.item == 0 {
-//                let vc = storyboard?.instantiateViewController(withIdentifier: "InjuryViewController") as! InjuryViewController
-//                self.navigationController?.pushViewController(vc, animated: true)
-//
-//            } else if indexPath.item == 1 {
-//                let vc = storyboard?.instantiateViewController(withIdentifier: "ChronicViewController") as! ChronicViewController
-//                self.navigationController?.pushViewController(vc, animated: true)
-//            } else if indexPath.item == 2 {
-//                let vc = storyboard?.instantiateViewController(withIdentifier: "CardiacViewController") as! CardiacViewController
-//                self.navigationController?.pushViewController(vc, animated: true)
-//            }else {
-//                let vc = storyboard?.instantiateViewController(withIdentifier: "WoundViewController") as! WoundViewController
-//                self.navigationController?.pushViewController(vc, animated: true)
-//            }
-//        }
-//
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == serviceCollectionView {
+            if indexPath.item == 0 {
+                let vc = storyboard?.instantiateViewController(withIdentifier: "PremiumCareViewController") as! PremiumCareViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+
+            } else if indexPath.item == 1 {
+                let vc = storyboard?.instantiateViewController(withIdentifier: "OptimaCareViewController") as! OptimaCareViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+            }else {
+               
+            }
+        }
+
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == safetyCollectionView {
