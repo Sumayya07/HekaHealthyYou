@@ -43,20 +43,20 @@ class MedicalAstrologyVC: MenuViewController {
     @IBOutlet var viewChooseOne: NSLayoutConstraint!
     @IBOutlet var viewChooseTwo: NSLayoutConstraint!
     @IBOutlet var viewChooseThree: NSLayoutConstraint!
-//    @IBOutlet var viewChooseFour: NSLayoutConstraint!
+    @IBOutlet var viewChooseFour: NSLayoutConstraint!
     
     
     
     @IBOutlet var imgChooseOne: NSLayoutConstraint!
     @IBOutlet var imgChooseTwo: NSLayoutConstraint!
     @IBOutlet var imgChooseThree: NSLayoutConstraint!
-//    @IBOutlet var imgChooseFour: NSLayoutConstraint!
+    @IBOutlet var imgChooseFour: NSLayoutConstraint!
     
     
     @IBOutlet var lblChooseOne: NSLayoutConstraint!
     @IBOutlet var lblChooseTwo: NSLayoutConstraint!
     @IBOutlet var lblChooseThree: NSLayoutConstraint!
-//    @IBOutlet var lblChooseFour: NSLayoutConstraint!
+    @IBOutlet var lblChooseFour: NSLayoutConstraint!
     
     
     @IBOutlet var safetyCollectionView: UICollectionView!
@@ -98,17 +98,17 @@ class MedicalAstrologyVC: MenuViewController {
         viewChooseOne.constant = 0
         viewChooseTwo.constant = 0
         viewChooseThree.constant = 0
-//        viewChooseFour.constant = 0
+        viewChooseFour.constant = 0
         
         imgChooseOne.constant = 0
         imgChooseTwo.constant = 0
         imgChooseThree.constant = 0
-//        imgChooseFour.constant = 0
+        imgChooseFour.constant = 0
         
         lblChooseOne.constant = 0
         lblChooseTwo.constant = 0
         lblChooseThree.constant = 0
-//        lblChooseFour.constant = 0
+        lblChooseFour.constant = 0
         
         btnEnquire.layer.cornerRadius = 6
         btnEnquire.layer.borderWidth = 0.5
@@ -300,17 +300,17 @@ class MedicalAstrologyVC: MenuViewController {
         viewChooseOne.constant = height
         viewChooseTwo.constant = height
         viewChooseThree.constant = height
-//        viewChooseFour.constant = height
+        viewChooseFour.constant = height
         
         imgChooseOne.constant = height
         imgChooseTwo.constant = height
         imgChooseThree.constant = height
-//        imgChooseFour.constant = height
+        imgChooseFour.constant = height
         
         lblChooseOne.constant = height
         lblChooseTwo.constant = height
         lblChooseThree.constant = height
-//        lblChooseFour.constant = height
+        lblChooseFour.constant = height
     }
 
     }
