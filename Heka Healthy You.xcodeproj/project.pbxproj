@@ -60,6 +60,8 @@
 		CA3BD7BE2A797E7600B96D6D /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7BD2A797E7600B96D6D /* RecoveryViewController.swift */; };
 		CA3BD7C02A79831600B96D6D /* ElderlyCareServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7BF2A79831600B96D6D /* ElderlyCareServiceCVC.swift */; };
 		CA3BD7C22A79833900B96D6D /* ElderlyCareSafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BD7C12A79833900B96D6D /* ElderlyCareSafetyCVC.swift */; };
+		CA61F1252AC53F2700C0A4E2 /* OptimaCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61F1242AC53F2700C0A4E2 /* OptimaCareViewController.swift */; };
+		CA61F1272AC53F3800C0A4E2 /* PremiumCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61F1262AC53F3800C0A4E2 /* PremiumCareViewController.swift */; };
 		CA685A832A8CD1F4009EDF2C /* OperativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A822A8CD1F4009EDF2C /* OperativeViewController.swift */; };
 		CA685A852A8CD29F009EDF2C /* OperativeServiceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A842A8CD29F009EDF2C /* OperativeServiceCVC.swift */; };
 		CA685A872A8CD2BA009EDF2C /* OperativeSafetyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA685A862A8CD2BA009EDF2C /* OperativeSafetyCVC.swift */; };
@@ -164,6 +166,8 @@
 		CA3BD7BD2A797E7600B96D6D /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
 		CA3BD7BF2A79831600B96D6D /* ElderlyCareServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElderlyCareServiceCVC.swift; sourceTree = "<group>"; };
 		CA3BD7C12A79833900B96D6D /* ElderlyCareSafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElderlyCareSafetyCVC.swift; sourceTree = "<group>"; };
+		CA61F1242AC53F2700C0A4E2 /* OptimaCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimaCareViewController.swift; sourceTree = "<group>"; };
+		CA61F1262AC53F3800C0A4E2 /* PremiumCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCareViewController.swift; sourceTree = "<group>"; };
 		CA685A822A8CD1F4009EDF2C /* OperativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperativeViewController.swift; sourceTree = "<group>"; };
 		CA685A842A8CD29F009EDF2C /* OperativeServiceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperativeServiceCVC.swift; sourceTree = "<group>"; };
 		CA685A862A8CD2BA009EDF2C /* OperativeSafetyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperativeSafetyCVC.swift; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				C06546472AC2FBEB00F7BFD4 /* MedicalAstrologyVC.swift */,
+				CA61F1242AC53F2700C0A4E2 /* OptimaCareViewController.swift */,
+				CA61F1262AC53F3800C0A4E2 /* PremiumCareViewController.swift */,
 			);
 			path = MedicalAstroglogyViewControllers;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				CA129EDC2A5D2C7900A5282D /* OperativeCareTableViewCell.swift in Sources */,
 				CA685A832A8CD1F4009EDF2C /* OperativeViewController.swift in Sources */,
 				CA73476A2A7CC07E00F44962 /* PostPregnancyViewController.swift in Sources */,
+				CA61F1252AC53F2700C0A4E2 /* OptimaCareViewController.swift in Sources */,
 				CA9277892A53404A00D8B287 /* AboutUsCVC.swift in Sources */,
 				CA129EE32A5D550500A5282D /* GeneralWellnessTableViewCell.swift in Sources */,
 				CA9277852A532EBD00D8B287 /* AboutUsViewController.swift in Sources */,
@@ -718,6 +725,7 @@
 				CA8E55982A7A773D00D8D1C0 /* ReferredTableViewCell.swift in Sources */,
 				CA7347702A7CC32E00F44962 /* PregnancySafetyCVC.swift in Sources */,
 				CAAA06DB2A94F705006DBAF7 /* userData.swift in Sources */,
+				CA61F1272AC53F3800C0A4E2 /* PremiumCareViewController.swift in Sources */,
 				CA129ED82A5D283F00A5282D /* ElderlyCareTableViewCell.swift in Sources */,
 				CAD27E732A73D6AD00C8AB5C /* EnquireViewController.swift in Sources */,
 				CAB0BAE72AC422B500EB3A8E /* MedicalSafetyCVC.swift in Sources */,
