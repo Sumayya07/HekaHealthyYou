@@ -330,11 +330,11 @@ extension PharmacyVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == safetyCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DoctorSafetyCVC", for: indexPath) as! DoctorSafetyCVC
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PharmacySafetyCVC", for: indexPath) as! PharmacySafetyCVC
             cell.imgSafetyTraining.image =  UIImage(named: safetyImages[indexPath.row])
             return cell
         } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DoctorServiceCVC", for: indexPath) as! DoctorServiceCVC
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PharmacyServiceCVC", for: indexPath) as! PharmacyServiceCVC
             cell.imgServiceInformation.image =  UIImage(named: serviceImages[indexPath.row])
             cell.lblServiceNames.text = serviceNames[indexPath.row]
 
