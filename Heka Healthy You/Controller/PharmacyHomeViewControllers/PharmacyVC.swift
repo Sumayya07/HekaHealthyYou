@@ -158,8 +158,8 @@ class PharmacyVC: MenuViewController {
         }
     
     func adjustScrollViewHeight() {
-            let desiredHeight: CGFloat = 680 // Aapki desired height yahan set kijiye
-            
+        let desiredHeight: CGFloat = 580 // Aapki desired height yahan set kijiye
+
             // Scroll view ki height ko set karein
             scrollView.contentSize = CGSize(width: scrollView.frame.width, height: desiredHeight)
         scrollView.isScrollEnabled = true // Enable scrolling

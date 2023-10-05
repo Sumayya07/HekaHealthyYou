@@ -85,10 +85,7 @@ class TrainingViewController: MenuViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        
+    
         adjustScrollViewHeight()
         
         IntroOpeningClosingConstraint.constant = 0
@@ -181,7 +178,7 @@ class TrainingViewController: MenuViewController {
         }
     
     func adjustScrollViewHeight() {
-            let desiredHeight: CGFloat = 680 // Aapki desired height yahan set kijiye
+            let desiredHeight: CGFloat = 580 // Aapki desired height yahan set kijiye
             
             // Scroll view ki height ko set karein
             scrollView.contentSize = CGSize(width: scrollView.frame.width, height: desiredHeight)
