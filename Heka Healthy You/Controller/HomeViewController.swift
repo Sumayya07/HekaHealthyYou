@@ -16,10 +16,10 @@ import CoreLocation
 
 // check ourservices scrolling issue.
 // date and time enquire now
-// send button working should not work when disable:::: DONE
-// submit button should not show enter 10 digits popup on click::: DONE
-// menu should close when user taps any where outside.::: DONE
-// menu not opening in roadsafety:: DONE
+// send button working should not work when disable              ::: DONE
+// submit button should not show enter 10 digits popup on click  ::: DONE
+// menu should close when user taps any where outside            ::: DONE
+// menu not opening in roadsafety                                ::: DONE
 // add one item in login state named: Download Certificate will be below about us only show in when user is logged in.
 // notification popup
 

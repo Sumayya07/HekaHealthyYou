@@ -60,35 +60,47 @@ class EnquireViewController: MenuViewController, UITextFieldDelegate {
         txtFieldMobileNumber.delegate = self
 
         // Date Picker Configuration
-             datePicker.datePickerMode = .date
-        if #available(iOS 13.4, *) {
-            datePicker.preferredDatePickerStyle = .wheels
-        } else {
-            // Fallback on earlier versions
-        }
-             datePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
-             txtFieldDate.inputView = datePicker
+         datePicker.datePickerMode = .date
+         if #available(iOS 13.4, *) {
+             datePicker.preferredDatePickerStyle = .wheels
+         }
+         datePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
+         
+         // Adding toolbar with Done button over DatePicker
+         let toolbar = UIToolbar()
+         toolbar.sizeToFit()
+         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(donePressedDate))
+         toolbar.setItems([doneButton], animated: false)
+         txtFieldDate.inputAccessoryView = toolbar
+         
+         txtFieldDate.inputView = datePicker
+         
+         // Time Picker Configuration
+         timePicker.datePickerMode = .time
+         if #available(iOS 13.4, *) {
+             timePicker.preferredDatePickerStyle = .wheels
+         }
+         timePicker.addTarget(self, action: #selector(timeChanged(_:)), for: .valueChanged)
+         
+         // Adding toolbar with Done button over TimePicker
+         let timeToolbar = UIToolbar()
+         timeToolbar.sizeToFit()
+         let doneButtonForTime = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(donePressedTime))
+         timeToolbar.setItems([doneButtonForTime], animated: false)
+         txtFieldTime.inputAccessoryView = timeToolbar
+         
+         txtFieldTime.inputView = timePicker
 
-             // Time Picker Configuration
-             timePicker.datePickerMode = .time
-        if #available(iOS 13.4, *) {
-            timePicker.preferredDatePickerStyle = .wheels
-        } else {
-            // Fallback on earlier versions
-        }
-             timePicker.addTarget(self, action: #selector(timeChanged(_:)), for: .valueChanged)
-             txtFieldTime.inputView = timePicker
-
-             // Gesture recognizer to dismiss picker
-             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
-             view.addGestureRecognizer(tapGesture)
-        
-        if let currentUser = UserManager.shared.currentUser {
-               self.txtFieldName.text = "\(currentUser.firstName) \(currentUser.lastName)"
-               self.txtFieldMobileNumber.text = currentUser.mobileNumber
-           } else {
-               print("No current user found")
-           }
+         // Gesture recognizer to dismiss picker
+         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
+         view.addGestureRecognizer(tapGesture)
+         
+         if let currentUser = UserManager.shared.currentUser {
+             self.txtFieldName.text = "\(currentUser.firstName) \(currentUser.lastName)"
+             self.txtFieldMobileNumber.text = currentUser.mobileNumber
+         } else {
+             print("No current user found")
+         }
         
         btnSubmit.isEnabled = false
         btnSubmit.backgroundColor = UIColor.gray
@@ -147,6 +159,21 @@ class EnquireViewController: MenuViewController, UITextFieldDelegate {
 
 
     }
+    @objc func donePressedDate() {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        txtFieldDate.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
+
+    @objc func donePressedTime() {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        txtFieldTime.text = formatter.string(from: timePicker.date)
+        self.view.endEditing(true)
+    }
+
+    
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         // Check if it's the txtFieldMobileNumber
