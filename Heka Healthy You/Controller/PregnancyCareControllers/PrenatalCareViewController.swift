@@ -53,11 +53,11 @@ class PrenatalCareViewController: MenuViewController, UITextFieldDelegate {
         
         starButtons = [starone, startwo, startthree, startfour, startfive]
         
-        starone.tintColor = UIColor.systemYellow
-        startwo.tintColor = UIColor.systemYellow
-        startthree.tintColor = UIColor.systemYellow
-        startfour.tintColor = UIColor.systemYellow
-        startfive.tintColor = UIColor.systemYellow
+        starone.tintColor = UIColor(hexString: "#3F6B68")
+        startwo.tintColor = UIColor(hexString: "#3F6B68")
+        startthree.tintColor = UIColor(hexString: "#3F6B68")
+        startfour.tintColor = UIColor(hexString: "#3F6B68")
+        startfive.tintColor = UIColor(hexString: "#3F6B68")
         
 
         txtFieldMobileNumber.delegate = self

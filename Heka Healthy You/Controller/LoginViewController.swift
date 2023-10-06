@@ -87,6 +87,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, CustomTextFiel
         loginsuccessfulview.layer.cornerRadius = 12
         
         btnSendOtp.layer.cornerRadius = 8
+        btnSendOtp.isEnabled = false // Add this line
+
         btnSubmit.layer.cornerRadius = 8
         
         btnSubmit.backgroundColor = UIColor.gray
@@ -246,12 +248,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate, CustomTextFiel
 
         if numberText.count < 10 {
             // Show a pop-up for invalid phone number
-            viewDigits.isHidden = false
+            viewDigits.isHidden = true
 
             // Hide the pop-up after 3 seconds
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                self.viewDigits.isHidden = true
-            }
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+//                self.viewDigits.isHidden = true
+//            }
         } else if otpText.count < 6 {
             // Show a pop-up for invalid OTP
 //            viewOTP.isHidden = false  // assuming you have a view named `viewOTP` for OTP pop-up, replace with appropriate name if different
@@ -279,17 +281,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate, CustomTextFiel
     
     
     @objc func txtFieldNumberDidChange(_ textField: UITextField) {
-        if let text = textField.text {
-            if text.count >= 10 {
-                btnSendOtp.isEnabled = true
-                btnSendOtp.backgroundColor = UIColor(hexString: "#3F6B68")
-
-            } else {
-                btnSendOtp.isEnabled = false
-                btnSendOtp.backgroundColor = UIColor.gray
-            }
+        guard let text = textField.text else {
+            btnSendOtp.isEnabled = false
+            btnSendOtp.backgroundColor = UIColor.gray
+            return
+        }
+        
+        if text.count >= 10 {
+            btnSendOtp.isEnabled = true
+            btnSendOtp.backgroundColor = UIColor(hexString: "#3F6B68")
+        } else {
+            btnSendOtp.isEnabled = false
+            btnSendOtp.backgroundColor = UIColor.gray
         }
     }
+
 }
 
 extension LoginViewController {

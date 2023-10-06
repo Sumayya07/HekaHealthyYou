@@ -68,9 +68,20 @@ class MenuViewController: UIViewController {
         
         // Add observer to get notified when user logs out
           NotificationCenter.default.addObserver(self, selector: #selector(handleUserLoggedOut), name: NSNotification.Name("userLoggedOut"), object: nil)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapOutsideMenu(_:)))
+           tapGesture.cancelsTouchesInView = false // This allows other buttons and controls to still receive touch events
+           self.view.addGestureRecognizer(tapGesture)
 
        
     }
+    @objc func handleTapOutsideMenu(_ gesture: UITapGestureRecognizer) {
+        let tapLocation = gesture.location(in: self.view)
+        if isMenuViewOpen, !viewMenu.frame.contains(tapLocation) {
+            closeMenuIfNeeded()
+        }
+    }
+
     
     @objc func handleUserLoggedOut() {
         // Call viewWillAppear to refresh the UI (this assumes viewWillAppear handles UI refresh based on login status)

@@ -12,6 +12,16 @@ import BackgroundTasks
 import AVKit
 import Reachability
 import MBProgressHUD
+import CoreLocation
+
+// check ourservices scrolling issue.
+// date and time enquire now
+// send button working should not work when disable:::: DONE
+// submit button should not show enter 10 digits popup on click::: DONE
+// menu should close when user taps any where outside.::: DONE
+// menu not opening in roadsafety:: DONE
+// add one item in login state named: Download Certificate will be below about us only show in when user is logged in.
+// notification popup
 
 class HomeViewController: MenuViewController {
     
@@ -21,6 +31,8 @@ class HomeViewController: MenuViewController {
     @IBOutlet var btnSOS: UIButton!
     
     var customerId: String?
+    let locationManager = CLLocationManager()
+
     
     let imageNames = ["Training", "ElderlyCare", "PregnancyCare", "OperativeCare", "Consultation", "LabTest", "Pharmacy", "Medical", "Service", "Wellness"]
     let labels = ["SAFETY TRAINING", "ELDERLY CARE", "PREGNANCY CARE", "OPERATIVE CARE", " DOCTOR CONSULTATION", "LAB TEST", "PHARMACY", "MEDICAL ASTROLOGY", "OVERSEAS SERVICE", "GENERAL WELLNESS"]
@@ -28,6 +40,9 @@ class HomeViewController: MenuViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
         print(self.customerId as Any)
         fetchCustomerData()
         navigationController?.isNavigationBarHidden = true
@@ -211,4 +226,22 @@ private func createDataBody(withParameters params: [String: String], boundary: S
     
     body.append("--\(boundary)--\(lineBreak)")
     return body
+}
+
+
+extension HomeViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .authorizedWhenInUse, .authorizedAlways:
+            print("Location Access Granted")
+            // You can start location updates here if necessary
+        case .denied, .restricted:
+            // Handle denial of access
+            print("Location Access Denied")
+        case .notDetermined:
+            print("Location Permission Not Determined")
+        default:
+            print("Unknown Location Authorization Status")
+        }
+    }
 }

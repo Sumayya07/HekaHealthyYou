@@ -6023,7 +6023,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                     <action selector="btnSubmitTapped:" destination="TDW-am-dAm" eventType="touchUpInside" id="4Jl-wI-tui"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vE0-cB-bS1">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vE0-cB-bS1">
                                 <rect key="frame" x="28" y="689" width="336" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile number should be 10 digits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTG-vA-izH">
@@ -6109,6 +6109,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                             <constraint firstItem="ZF9-Z1-cRe" firstAttribute="top" secondItem="bhr-jY-Tbl" secondAttribute="top" id="iaB-cb-SA9"/>
                             <constraint firstItem="bhr-jY-Tbl" firstAttribute="trailing" secondItem="l7b-5O-YkG" secondAttribute="trailing" constant="50" id="ikE-74-0yZ"/>
                             <constraint firstItem="ZF9-Z1-cRe" firstAttribute="trailing" secondItem="bhr-jY-Tbl" secondAttribute="trailing" id="kGM-4Q-xIX"/>
+                            <constraint firstItem="vE0-cB-bS1" firstAttribute="top" secondItem="FxB-8L-v7Y" secondAttribute="bottom" constant="110" id="kqd-H8-oIZ"/>
                             <constraint firstItem="QhQ-UL-zi6" firstAttribute="top" secondItem="uez-6d-MmP" secondAttribute="bottom" constant="36" id="oUv-Ce-8V4"/>
                             <constraint firstItem="4T2-ul-NuS" firstAttribute="top" secondItem="ZF9-Z1-cRe" secondAttribute="bottom" constant="60" id="oYH-z4-cq0"/>
                             <constraint firstItem="N8t-we-qSf" firstAttribute="trailing" secondItem="bhr-jY-Tbl" secondAttribute="trailing" id="pjB-1F-euq"/>
@@ -7134,6 +7135,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="Navigation"/>
                                         <connections>
+                                            <action selector="btnMenuTapped:" destination="eSv-tt-asD" eventType="touchUpInside" id="cu2-tc-B9j"/>
                                             <action selector="btnMenuTapped:" destination="pXd-jb-ja8" eventType="touchUpInside" id="fY3-ko-msL"/>
                                         </connections>
                                     </button>
@@ -7248,12 +7250,26 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                             <action selector="btnHomeTapped:" destination="7tk-g2-2gz" eventType="touchUpInside" id="urk-no-Rk0"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmB-Qp-Bup">
+                                        <rect key="frame" x="131" y="24" width="127" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="GSL-8i-qp9"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Home"/>
+                                        <connections>
+                                            <action selector="btnHomeTapped:" destination="7tk-g2-2gz" eventType="touchUpInside" id="Zdg-P0-mU5"/>
+                                            <action selector="btnHomeTapped:" destination="HF5-DD-cuw" eventType="touchUpInside" id="p80-dE-akj"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2fu-iz-Ucn"/>
                                     <constraint firstItem="OiT-dQ-rco" firstAttribute="top" secondItem="FoB-oj-lWi" secondAttribute="top" id="6nr-XI-lEw"/>
                                     <constraint firstItem="prb-qp-1Na" firstAttribute="top" secondItem="FoB-oj-lWi" secondAttribute="top" id="7wI-wN-zSR"/>
+                                    <constraint firstAttribute="trailing" secondItem="FmB-Qp-Bup" secondAttribute="trailing" constant="135" id="IEG-A5-bVc"/>
+                                    <constraint firstItem="FmB-Qp-Bup" firstAttribute="top" secondItem="FoB-oj-lWi" secondAttribute="top" constant="24" id="IGg-1Z-bAa"/>
                                     <constraint firstAttribute="trailing" secondItem="sd0-9f-89v" secondAttribute="trailing" id="RtM-1u-6Eu"/>
                                     <constraint firstItem="prb-qp-1Na" firstAttribute="leading" secondItem="FoB-oj-lWi" secondAttribute="leading" id="Vp6-Jq-PUl"/>
                                     <constraint firstAttribute="trailing" secondItem="prb-qp-1Na" secondAttribute="trailing" constant="268" id="X0V-zH-ba1"/>
@@ -7568,11 +7584,14 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                     <size key="freeformSize" width="393" height="980"/>
                     <connections>
                         <outlet property="btnCross" destination="Qg2-ml-che" id="H5W-oq-Tdm"/>
+                        <outlet property="btnLogin" destination="TTy-Es-4yp" id="hIs-2M-vmd"/>
                         <outlet property="btnRequest" destination="zUW-gL-hMD" id="Nnv-nz-5bg"/>
                         <outlet property="btnSOS" destination="c78-58-2WK" id="NLt-m4-xF7"/>
                         <outlet property="btnSchedule" destination="Oz8-vQ-4Qp" id="qPE-07-9dF"/>
+                        <outlet property="btnSignup" destination="ZLc-t3-a5v" id="GAB-E3-HXC"/>
                         <outlet property="callbackpopup" destination="zUW-gL-hMD" id="Sxz-yh-GdZ"/>
                         <outlet property="emailpopup" destination="XGq-ll-nYT" id="7HR-fx-F43"/>
+                        <outlet property="lblUserFullName" destination="VVf-ID-Dba" id="QNj-f2-MYW"/>
                         <outlet property="mobilepopup" destination="Oxp-Yq-LVB" id="uqt-fo-uwI"/>
                         <outlet property="namepopup" destination="Dm2-qw-lQ1" id="ycc-UU-lnM"/>
                         <outlet property="starone" destination="8OA-I8-rl3" id="v8C-rr-sPH"/>
@@ -8434,7 +8453,7 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                         <state key="normal" image="Info"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8B-92-V7U">
-                                        <rect key="frame" x="266" y="0.0" width="127" height="60"/>
+                                        <rect key="frame" x="369" y="0.0" width="24" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Eq6-y3-e4I"/>
                                         </constraints>
@@ -8445,31 +8464,15 @@ We provide a comprehensive continuum of care with specialized Doctors, Physiothe
                                             <action selector="btnBackTapped:" destination="HF5-DD-cuw" eventType="touchUpInside" id="fx7-Qu-Sil"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmB-Qp-Bup">
-                                        <rect key="frame" x="133" y="0.0" width="127" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="GSL-8i-qp9"/>
-                                        </constraints>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="Home"/>
-                                        <connections>
-                                            <action selector="btnHomeTapped:" destination="7tk-g2-2gz" eventType="touchUpInside" id="Zdg-P0-mU5"/>
-                                            <action selector="btnHomeTapped:" destination="HF5-DD-cuw" eventType="touchUpInside" id="p80-dE-akj"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="fDa-Kt-K1b" firstAttribute="leading" secondItem="G90-FF-aCN" secondAttribute="leading" id="7cE-6y-4md"/>
-                                    <constraint firstItem="FmB-Qp-Bup" firstAttribute="leading" secondItem="fDa-Kt-K1b" secondAttribute="trailing" constant="8" symbolic="YES" id="BCg-PU-VK2"/>
-                                    <constraint firstItem="FmB-Qp-Bup" firstAttribute="top" secondItem="G90-FF-aCN" secondAttribute="top" id="Doz-c4-nnf"/>
                                     <constraint firstAttribute="trailing" secondItem="fDa-Kt-K1b" secondAttribute="trailing" constant="268" id="Ese-o3-5qD"/>
                                     <constraint firstAttribute="trailing" secondItem="Z8B-92-V7U" secondAttribute="trailing" id="Faa-ja-3VE"/>
                                     <constraint firstItem="fDa-Kt-K1b" firstAttribute="top" secondItem="G90-FF-aCN" secondAttribute="top" id="YTT-ck-Srn"/>
                                     <constraint firstItem="Z8B-92-V7U" firstAttribute="top" secondItem="G90-FF-aCN" secondAttribute="top" id="YmD-i1-Q84"/>
                                     <constraint firstAttribute="height" constant="60" id="cUL-wC-5bg"/>
-                                    <constraint firstAttribute="trailing" secondItem="FmB-Qp-Bup" secondAttribute="trailing" constant="133" id="kly-Wg-mUE"/>
-                                    <constraint firstItem="Z8B-92-V7U" firstAttribute="leading" secondItem="FmB-Qp-Bup" secondAttribute="trailing" constant="6" id="wdg-ja-xc8"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="six-gN-EO3">
