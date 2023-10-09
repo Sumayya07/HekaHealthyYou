@@ -25,9 +25,9 @@ class MenuViewController: UIViewController {
     @IBOutlet var btnLogin: UIButton!
     @IBOutlet var btnSignup: UIButton!
     
-    let lblMenu = ["About Us","FAQ","Help & Support","Like Us ? Rate Us ","Terms of Use","Log Out"]
+    let lblMenu = ["About Us","Download Certificate", "FAQ","Help & Support","Like Us ? Rate Us ","Terms of Use","Log Out"]
     
-    let imgMenu = ["About","FAQ","Help","Rate","Legal","Records","Language","Settings","Help","Rate","Logout","FAQ","","",""]
+    let imgMenu = ["About","Certificate", "FAQ","Help","Rate","Legal","Records","Language","Settings","Help","Rate","Logout","FAQ","","",""]
     
     var currentMenuOptions: [String] {
         if UserManager.shared.currentUser == nil {

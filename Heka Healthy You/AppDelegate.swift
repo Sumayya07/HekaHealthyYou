@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
+        
+        // Requesting Notification Permission
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            if granted {
+                print("Notifications permission granted.")
+            } else {
+                print("Notifications permission denied because: \(String(describing: error?.localizedDescription)).")
+            }
+        }
         return true
     }
 
