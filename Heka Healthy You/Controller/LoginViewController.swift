@@ -95,6 +95,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate, CustomTextFiel
         
         phoneNoLabel.delegate = self
         
+        phoneNoLabel.keyboardType = .numberPad // Use the number pad keyboard
+        phoneNoLabel.textContentType = .telephoneNumber // Enable autofill for telephone numbers
+
+        
         
         phoneNoLabel.addTarget(self, action: #selector(txtFieldNumberDidChange), for: .editingChanged)
         
